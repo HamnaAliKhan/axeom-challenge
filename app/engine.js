@@ -970,7 +970,7 @@
       add({ id: 'churn-' + x.client, kind: 'client', priority: 1000 + x.score, client: x.client, clientName: c.name,
         title: `${c.name} may leave. Call ${who.split(' ')[0]} today?`,
         why: x.evidence.slice(0, 3).join(' · '),
-        yes: 'Call now', draft: { channel: 'phone', to: fmtPhone(contact.phone || [...c.phones][0]), text: `Hi ${who.split(' ')[0]}, it's Zaid from Axeom. I saw your note about the contract. You're right that we've missed things: ${openLost.slice(-3).map(r => r.standing ? 'your instruction "' + r.label.replace(/^Standing instruction:s*/, '') + '"' : r.title + ' (' + r.label.toLowerCase() + ')').join(', ')}. I'm fixing them myself this week and I want to walk you through how we'll stop it happening. When can we talk?` } });
+        yes: 'Call now', draft: { channel: 'phone', to: fmtPhone(contact.phone || [...c.phones][0]), text: `Hi ${who.split(' ')[0]}, it's Zaid from Axeom. I saw your note about the contract. You're right that we've missed things: ${openLost.slice(-3).map(r => r.standing ? 'your instruction "' + r.label.replace(/^Standing instruction:\s*/, '') + '"' : r.title + ' (' + r.label.toLowerCase() + ')').join(', ')}. I'm fixing them myself this week and I want to walk you through how we'll stop it happening. When can we talk?` } });
     });
 
     // 2. edit requests that never reached the board (recent, still open)
