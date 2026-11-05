@@ -1,0 +1,102 @@
+lead_id,created,name,business,email,phone,source,first_reply,status
+L001,2026-03-27 13:53,Gloria Sullivan,Sullivan Dental PLLC,hello@sullivandental.com,972-555-0165,LinkedIn,2026-03-28,Won
+L002,2026-03-28 10:57,Angela Vega,Faith & Fire Podcast,angela@faithandfire.fm,817-555-0184,Instagram,2026-03-30,Won
+L003,2026-03-29 12:44,Joy Bennett,Bennett Coffee,joy@bennettcoffee.com,214-555-0135,Meta ad,,New
+L004,2026-03-30 09:38,Victor Jackson,Jackson Chiropractic,victor@jacksonchiropractic.com,469-555-0116,LinkedIn,2026-04-02,Lost
+L005,2026-03-30 12:36,Reggie Price,Cypress DFW,media@cypressdfw.org,972-555-0112,Referral,2026-04-01,Won
+L006,2026-04-02 12:34,Joy Cole,,joycole39@gmail.com,972-555-0184,Google,,New
+L007,2026-04-02 12:37,Paul Tran,Paul's Roofing LLC,paul@paulsroofingtx.com,469-555-0150,Website form,2026-04-02,Won
+L008,2026-04-03 16:15,Grace Lopez,Lopez Fitness,grace@lopezfitness.com,972-555-0172,Instagram,,New
+L009,2026-04-03 16:45,Victor Park,Park Realty,victor@parkrealty.com,469-555-0160,Meta ad,2026-04-04,Lost
+L010,2026-04-03 21:07,Darnell Shah,Darnell Shah,darnell@ntxfounders.fm,469-555-0141,Meta ad,2026-04-04,Won
+L011,2026-04-05 19:23,Isaac Walsh,Redbird Builders,isaac@redbird.build,817-555-0127,Google,2026-04-07,Won
+L012,2026-04-06 17:12,Carmen Ortiz,Crown Med Spa,carmen@crownmedspa.com,817-555-0158,Google,2026-04-06,Won
+L013,2026-04-14 13:45,Hannah Kim,Kim Salon,hannah@kimsalon.com,214-555-0150,Google,2026-04-17,Lost
+L014,2026-04-15 14:32,Nolan Hale,Greenway Wealth Partners,nhale@greenwaywp.com,972-555-0192,Instagram,2026-04-16,Won
+L015,2026-04-15 21:54,Imran Haddad,Haddad Med Spa,imran@haddadmedspa.com,214-555-0157,Meta ad,2026-04-16,Lost
+L016,2026-04-20 16:21,Carmen Ibarra,Evergreen Bridal Boutique,carmen@evergreenbridal.com,817-555-0137,Meta ad,2026-04-20,Won
+L017,2026-04-25 11:14,Raj Russo,Russo Landscaping,raj@russolandscaping.com,214-555-0113,Meta ad,2026-05-03,Lost
+L018,2026-04-26 15:44,Luis Kim,Kim Salon,luis@kimsalon.com,972-555-0113,Instagram,2026-05-01,Lost
+L019,2026-04-28 14:20,Trent Novak,Dr. Novak,drnovak@magnoliachiro.com,214-555-0177,Instagram,2026-04-30,Won
+L020,2026-04-30 17:20,Mateo Morales,Sunset Fitness,mateo@sunsetfit.co,817-555-0128,Google,2026-05-02,Won
+L021,2026-05-02 17:05,Alan Grant,Grant Plumbing,alan@grantplumbing.com,214-555-0193,Instagram,2026-05-10,Lost
+L022,2026-05-06 11:33,Paul Zamora,Zamora Law Firm,info@zamoralaw.com,214-555-0131,Google,2026-05-06,Won
+L023,2026-05-11 20:43,Alan Bennett,Beacon Barbershop,alan@beaconbarbers.com,214-555-0137,Google,2026-05-11,Won
+L024,2026-05-12 17:02,Carmen Price,,carmenprice82@gmail.com,469-555-0178,Meta ad,2026-05-13,Lost
+L025,2026-05-13 14:32,Alana Becker,Copperline Med Spa - Plano,alana@copperlinemedspa.com,214-555-0103,LinkedIn,2026-05-14,Won
+L026,2026-05-21 15:03,Tasha Brooks,Brooks Dental Care,tasha@brooksdentalcare.com,214-555-0184,Google,2026-05-22,Lost
+L027,2026-05-23 15:02,Free followers,,promo@fastfollowers.io,,Website form,,New
+L028,2026-05-24 21:09,Victor Ibarra,Ibarra Insurance Group,victor@ibarrainsures.com,469-555-0187,Website form,2026-05-24,Won
+L029,2026-05-25 13:32,Nina Adeyemi,Adeyemi Coffee,nina@adeyemicoffee.com,214-555-0125,Meta ad,2026-05-26,Lost
+L030,2026-05-28 08:24,Kelsey Romero,,kelseyromero21@gmail.com,214-555-0129,Meta ad,2026-06-02,Lost
+L031,2026-05-29 11:27,Joy Webb,Red Oak Realty,joy@redoakrealty.com,817-555-0181,Referral,2026-05-30,Won
+L032,2026-05-29 12:12,Sarah Jackson,Jackson Salon,sarah@jacksonsalon.com,214-555-0185,Google,,New
+L033,2026-05-30 08:56,Angela Webb,Ironclad Dental,hello@ironcladdental.com,469-555-0115,Referral,2026-06-01,Won
+L034,2026-05-31 18:34,Isaac Romero,,isaacromero20@gmail.com,469-555-0168,Instagram,2026-05-31,Lost
+L035,2026-05-31 19:18,Nina Reed,Reed Realty,nina@reedrealty.com,469-555-0182,Meta ad,2026-06-08,Lost
+L036,2026-06-01 16:47,Grace Green,Green Salon,grace@greensalon.com,214-555-0117,Meta ad,,New
+L037,2026-06-02 13:33,Sofia Ochoa,Tallgrass Digital,sofia@tallgrassmktg.com,214-555-0146,Referral,2026-06-04,Won
+L038,2026-06-05 17:38,Lena Patel,,lenapatel85@gmail.com,972-555-0120,Meta ad,2026-06-07,Lost
+L039,2026-06-06 20:36,Gloria Sullivan,Sullivan Dental,hello@sullivandental.com,972-555-0165,Website form,2026-06-06,Won
+L040,2026-06-07 10:22,Brooke Castillo,Prime Pediatrics,bcastillo@primepeds.com,469-555-0153,Referral,2026-06-07,Won
+L041,2026-06-08 16:47,Brooke Sullivan,Brooke Sullivan,bsullivan@sullivanfamilylaw.com,817-555-0104,Referral,2026-06-10,Won
+L042,2026-06-08 19:55,Andre Lopez,Lopez Roofing,andre@lopezroofing.com,469-555-0120,Website form,2026-06-09,Lost
+L043,2026-06-09 18:03,Paula Cho,Cho Coffee,paula@chocoffee.com,214-555-0101,Website form,,New
+L044,2026-06-12 10:54,Tanya Zamora,,tanyazamora84@gmail.com,214-555-0114,Meta ad,2026-06-15,Lost
+L045,2026-06-12 13:13,Priya Shah,Shah Fitness,priya@shahfitness.com,972-555-0162,Meta ad,2026-06-13,Lost
+L046,2026-06-16 10:17,Ethan Adeyemi,Adeyemi Med Spa,ethan@adeyemimedspa.com,214-555-0197,Website form,2026-06-17,Lost
+L047,2026-06-19 20:14,Paula Hassan,Glow PT,phassan@glowptdallas.com,817-555-0115,Referral,2026-06-20,Won
+L048,2026-06-20 15:33,Ivy Green,Lakesidelab Coffee,ivy@thelakesidelab.coffee,817-555-0136,Meta ad,2026-06-21,Won
+L049,2026-06-21 20:29,Victor Torres,Torres Dental Care,victor@torresdentalcare.com,972-555-0138,Meta ad,2026-06-22,Lost
+L050,2026-06-25 20:12,Joy Khan,Khan Yoga Studio,joy@khanyogastudio.com,817-555-0140,Meta ad,2026-06-25,Lost
+L051,2026-06-26 13:40,Darnell Tran,Trinity Gym,darnell@trinitygym.co,972-555-0144,Instagram,2026-06-27,Won
+L052,2026-06-26 20:11,Mike Castillo,Castillo Insurance,mike@castilloinsurance.com,972-555-0135,Instagram,2026-07-01,Lost
+L053,2026-06-29 20:58,Grace Lee,Lee Landscaping,grace@leelandscaping.com,469-555-0106,Website form,2026-07-02,Lost
+L054,2026-06-30 14:35,Tanya Moore,Moore Salon,tanya@mooresalon.com,972-555-0122,Google,2026-07-01,Lost
+L055,2026-06-30 20:59,Simone Price,Price Salon,simone@pricesalon.com,972-555-0149,Instagram,2026-07-02,Lost
+L056,2026-07-01 09:01,Kim Fischer,Fischer Landscaping,kim@fischerlandscaping.com,817-555-0178,Google,2026-07-03,Lost
+L057,2026-07-02 14:49,Reggie Wallace,Wallace Family Dentistry,reggie@wallacefamilydentistry.com,469-555-0143,Meta ad,2026-07-10,Lost
+L058,2026-07-05 20:54,Simone Malik,Luna Therapy,smalik@lunafamilytherapy.com,817-555-0192,Website form,2026-07-05,Won
+L059,2026-07-09 11:18,Kelsey Hale,Hale Auto Detailing,kelsey.hale.detail@gmail.com,817-555-0185,Meta ad,2026-07-10,Won
+L060,2026-07-10 13:08,Erin Bennett,Bennett Salon,erin@bennettsalon.com,972-555-0111,Google,,New
+L061,2026-07-11 14:58,Rosa Okafor,Ridgeway Coffee Roasters,rosa@ridgewaycoffee.com,214-555-0164,Referral,2026-07-11,Won
+L062,2026-07-12 12:01,Alan Wallace,,alanwallace71@gmail.com,972-555-0186,Meta ad,,New
+L063,2026-07-16 08:38,Ivy Castillo,Castillo Med Spa,ivy@castillomedspa.com,469-555-0112,Website form,2026-07-17,Lost
+L064,2026-07-17 08:31,Dana Wallace,Wallace Yoga Studio,dana@wallaceyogastudio.com,214-555-0166,Meta ad,,New
+L065,2026-07-17 08:48,Paul Fischer,,paulfischer53@gmail.com,817-555-0144,LinkedIn,,New
+L066,2026-07-18 11:50,Nolan Daniels,Daniels Tax Services,nolan@danielstaxservices.com,817-555-0103,Instagram,2026-07-20,Lost
+L067,2026-07-18 13:20,asdf,,a@a.co,,Website form,,New
+L068,2026-07-21 16:22,Carmen Patel,Patel Auto Group,carmen@patelautogroup.com,817-555-0105,LinkedIn,2026-07-22,Lost
+L069,2026-07-25 20:30,Leah Ochoa,Ochoa Tax Services,leah@ochoataxservices.com,214-555-0154,LinkedIn,2026-07-28,Lost
+L070,2026-07-26 20:30,Carmen Ortiz,Crown Med Spa - Frisco,frisco@crownmedspa.com,817-555-0158,Website form,2026-07-27,New
+L071,2026-07-26 21:24,Renee Lopez,Lopez Med Spa,renee@lopezmedspa.com,214-555-0126,LinkedIn,2026-08-03,Lost
+L072,2026-07-29 09:04,Joy Castillo,Castillo Roofing,joy@castilloroofing.com,817-555-0186,Instagram,,New
+L073,2026-07-30 21:24,Luis Castillo,Luis's Roofing,luis@luissroofingtx.com,972-555-0159,Referral,2026-07-31,Won
+L074,2026-07-31 08:29,Carmen Jackson,Jackson Family Dentistry,carmen@jacksonfamilydentistry.com,817-555-0166,Google,2026-08-05,Lost
+L075,2026-07-31 16:04,Angela Jackson,Jackson Auto Group,angela@jacksonautogroup.com,214-555-0159,Google,2026-08-05,Lost
+L076,2026-08-01 09:17,Sarah Wallace,Wallace Realty,sarah@wallacerealty.com,972-555-0118,Google,2026-08-06,Lost
+L077,2026-08-01 18:01,Crypto Deals,,deals@coin-x.io,,Website form,,New
+L078,2026-08-02 17:32,Greg Reed,Redoak Realty Group,greg@redoakrg.com,817-555-0152,LinkedIn,2026-08-03,Won
+L079,2026-08-03 14:46,Brooke Chen,,brookechen14@gmail.com,972-555-0160,Instagram,2026-08-08,Lost
+L080,2026-08-05 13:15,Kim Vega,Vega Dental Care,kim@vegadentalcare.com,972-555-0108,Website form,2026-08-05,Lost
+L081,2026-08-05 15:31,Lucia Wallace,Wallace Roofing,lucia@wallaceroofing.com,817-555-0108,Instagram,2026-08-10,Lost
+L082,2026-08-05 21:14,Mateo Morales,Sunset Athletics,mateo@sunsetathletics.com,817-555-0128,Website form,,New
+L083,2026-08-08 14:49,Wes Wallace,,weswallace69@gmail.com,214-555-0139,Meta ad,2026-08-16,Lost
+L084,2026-08-16 12:52,Carlos Russo,,carlosrusso72@gmail.com,817-555-0194,Website form,,New
+L085,2026-08-16 16:20,Nina Grant,Grant Landscaping,nina@grantlandscaping.com,817-555-0153,Instagram,2026-08-17,Lost
+L086,2026-08-17 11:19,Maria Rivera,Rivera HVAC,maria@riverahvac.com,972-555-0119,Instagram,,New
+L087,2026-08-19 11:49,Isaac Novak,Novak Auto,isaac.novak.detail@gmail.com,214-555-0199,Instagram,2026-08-20,Won
+L088,2026-08-23 20:03,Nina Cho,ABC Homecare,nina@abchomecare.com,817-555-0122,Website form,2026-08-24,Won
+L089,2026-08-25 19:41,Ivy Romero,Romero HVAC,ivy@romerohvac.com,469-555-0192,Instagram,,New
+L090,2026-08-28 15:39,Lena Grant,,lenagrant53@gmail.com,469-555-0167,Instagram,2026-08-30,Lost
+L091,2026-09-03 17:26,Paula Morales,Morales Fitness,paula@moralesfitness.com,972-555-0153,Website form,2026-09-08,Lost
+L092,2026-09-04 13:05,Wes Cho,,wescho87@gmail.com,214-555-0155,Google,2026-09-05,Lost
+L093,2026-09-04 14:03,Imran Malik,Malik Plumbing,imran@malikplumbing.com,972-555-0103,Google,2026-09-09,Lost
+L094,2026-09-05 16:35,Derek Hassan,Hassan Dental Care,derek@hassandentalcare.com,469-555-0194,Meta ad,2026-09-13,Lost
+L095,2026-09-05 20:57,Angela Vega,,angela.vega.mail@gmail.com,817-555-0184,Website form,,New
+L096,2026-09-09 14:26,Nolan Nguyen,,nolannguyen69@gmail.com,972-555-0166,Instagram,2026-09-12,Lost
+L097,2026-09-10 13:36,Nina Webb,Webb Chiropractic,nina@webbchiropractic.com,214-555-0124,Google,2026-09-11,Lost
+L098,2026-09-16 13:25,Greg Ramirez,Ramirez Realty,greg@ramirezrealty.com,214-555-0133,Google,2026-09-17,Talking
+L099,2026-09-20 19:41,Hannah Becker,Becker Family Dentistry,hannah@beckerfamilydentistry.com,972-555-0168,Instagram,2026-09-23,Lost
+L100,2026-09-28 09:14,test test,,test@test.com,,Website form,,New
+L101,2026-09-29 15:42,Kim Novak,Magnolia Chiropractic,kim@magnoliachiro.com,972-555-0148,Website form,,New

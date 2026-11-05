@@ -1,0 +1,120 @@
+payment_id,date,payer,payer_email,amount,method,reference
+P5001,13/04/2026,Greenway WP,nhale@greenwaywp.com,2500.00,card,
+P5002,17/04/2026,ANGELA VEGA,angela@faithandfire.fm,300.00,card,
+P5003,18/04/2026,NORTH TEXAS FOUNDERS,darnell@ntxfounders.fm,550.00,Zelle,INV-1008
+P5004,19/04/2026,PASTOR REGGIE PRICE,media@cypressdfw.org,300.00,ACH,INV-1009
+P5005,21/04/2026,REGGIE PRICE,media@cypressdfw.org,300.00,card,
+P5006,24/04/2026,Cypress Media Team,media@cypressdfw.org,300.00,card,INV-1002
+P5007,25/04/2026,FAITH & FIRE PODCAST,angela@faithandfire.fm,300.00,ACH,INV-1003
+P5008,26/04/2026,REDBIRD BUILDERS LLC,isaac@redbird.build,1500.00,Zelle,INV-1005
+P5009,29/04/2026,Cypress Media Team,media@cypressdfw.org,300.00,card,
+P5010,30/04/2026,EVERGREEN BRIDAL BOUTIQUE,carmen@evergreenbridal.com,900.00,card,
+P5011,01/05/2026,SULLIVAN DENTAL,hello@sullivandental.com,1500.00,card,INV-1004
+P5012,03/05/2026,ANGELA VEGA,angela@faithandfire.fm,300.00,Zelle,
+P5013,07/05/2026,PAUL TRAN,paul@paulsroofingtx.com,900.00,card,
+P5014,08/05/2026,Crown Med Spa,carmen@crownmedspa.com,1500.00,card,INV-1010
+P5015,08/05/2026,NOLAN HALE,nhale@greenwaywp.com,2500.00,card,INV-1015
+P5016,13/05/2026,ZAMORA LAW,info@zamoralaw.com,2500.00,card,INV-1016
+P5017,13/05/2026,Faith & Fire,angela@faithandfire.fm,300.00,card,INV-1019
+P5018,14/05/2026,Pauls Roofing,paul@paulsroofingtx.com,900.00,ACH,
+P5019,16/05/2026,PASTOR REGGIE PRICE,media@cypressdfw.org,240.00,ACH,INV-1018
+P5020,20/05/2026,NTX Founders,darnell@ntxfounders.fm,550.00,card,INV-1017
+P5021,20/05/2026,SUNSET FITNESS,mateo@sunsetfit.co,900.00,ACH,INV-1021
+P5022,21/05/2026,CYPRESS CHURCH,media@cypressdfw.org,240.00,card,INV-1023
+P5023,22/05/2026,North Texas Founders,darnell@ntxfounders.fm,550.00,ACH,INV-1025
+P5024,25/05/2026,Angela Vega,angela@faithandfire.fm,300.00,card,INV-1022
+P5025,25/05/2026,Redbird & Co Builders,isaac@redbird.build,1500.00,Zelle,INV-1026
+P5026,28/05/2026,Copperline Med Spa,alana@copperlinemedspa.com,900.00,Zelle,INV-1024
+P5027,31/05/2026,Faith & Fire Podcast,angela@faithandfire.fm,300.00,Zelle,INV-1029
+P5028,02/06/2026,Greenway Wealth Partners,nhale@greenwaywp.com,2500.00,ACH,INV-1030
+P5029,02/06/2026,Ibarra Ins,victor@ibarrainsures.com,2500.00,card,
+P5030,03/06/2026,TRENT NOVAK,drnovak@magnoliachiro.com,2500.00,card,INV-1032
+P5031,05/06/2026,REGGIE PRICE,media@cypressdfw.org,240.00,Zelle,INV-1028
+P5032,05/06/2026,Gloria Sullivan DDS,hello@sullivandental.com,1500.00,card,INV-1035
+P5033,07/06/2026,ALAN BENNETT,alan@beaconbarbers.com,900.00,card,
+P5034,13/06/2026,Cypress DFW,media@cypressdfw.org,240.00,card,INV-1034
+P5035,14/06/2026,Dr. Angela Webb,hello@ironcladdental.com,1500.00,card,INV-1036
+P5036,15/06/2026,CYPRESS CHURCH,media@cypressdfw.org,240.00,card,INV-1043
+P5037,15/06/2026,CROWN MEDSPA,carmen@crownmedspa.com,1500.00,card,INV-1044
+P5038,16/06/2026,NTX FOUNDERS,darnell@ntxfounders.fm,550.00,card,INV-1039
+P5039,19/06/2026,Paul's Roofing LLC,paul@paulsroofingtx.com,900.00,ACH,INV-1041
+P5040,19/06/2026,ZAMORA LAW,info@zamoralaw.com,2500.00,Zelle,INV-1033
+P5041,20/06/2026,Faith & Fire Podcast,angela@faithandfire.fm,300.00,card,INV-1040
+P5042,21/06/2026,Evergreen Bridal Boutique,carmen@evergreenbridal.com,900.00,card,INV-1037
+P5043,26/06/2026,RED OAK REALTY,joy@redoakrealty.com,1500.00,card,
+P5044,27/06/2026,COPPERLINE MED SPA,alana@copperlinemedspa.com,900.00,Zelle,
+P5045,27/06/2026,Lakesidelab Coffee,ivy@thelakesidelab.coffee,900.00,card,
+P5046,29/06/2026,Sullivan Law,bsullivan@sullivanfamilylaw.com,900.00,card,INV-1047
+P5047,01/07/2026,North Texas Founders,darnell@ntxfounders.fm,550.00,ACH,INV-1046
+P5048,01/07/2026,Evergreen Bridal Boutique,carmen@evergreenbridal.com,900.00,card,INV-1053
+P5049,03/07/2026,PAUL ZAMORA,info@zamoralaw.com,2500.00,card,
+P5050,03/07/2026,TALLGRASS DIGITAL LLC,sofia@tallgrassmktg.com,900.00,ACH,Tallgrass Jun invoices
+P5051,03/07/2026,VICTOR IBARRA,victor@ibarrainsures.com,2500.00,Zelle,INV-1055
+P5052,04/07/2026,North Texas Founders,darnell@ntxfounders.fm,550.00,card,
+P5053,04/07/2026,Mateo Morales,mateo@sunsetfit.co,900.00,Zelle,INV-1045
+P5054,04/07/2026,Alan Bennett,alan@beaconbarbers.com,900.00,card,
+P5055,04/07/2026,Cypress DFW,media@cypressdfw.org,240.00,ACH,INV-1052
+P5056,06/07/2026,ANGELA VEGA,angela@faithandfire.fm,300.00,card,INV-1060
+P5057,07/07/2026,Angela Vega,angela@faithandfire.fm,300.00,card,INV-1049
+P5058,10/07/2026,Redbird & Co Builders,isaac@redbird.build,1500.00,ACH,INV-1063
+P5059,12/07/2026,PASTOR REGGIE PRICE,media@cypressdfw.org,240.00,card,INV-1061
+P5060,15/07/2026,TRINITY GYM,darnell@trinitygym.co,900.00,ACH,INV-1062
+P5061,16/07/2026,Sullivan Family Law,bsullivan@sullivanfamilylaw.com,900.00,card,
+P5062,19/07/2026,F&F Podcast,angela@faithandfire.fm,300.00,card,INV-1068
+P5063,22/07/2026,Paul's Roofing LLC,paul@paulsroofingtx.com,900.00,card,INV-1065
+P5064,23/07/2026,MAGNOLIA CHIRO,drnovak@magnoliachiro.com,2500.00,card,INV-1057
+P5065,23/07/2026,Greenway WP,nhale@greenwaywp.com,2500.00,card,
+P5066,23/07/2026,CYPRESS CHURCH,media@cypressdfw.org,240.00,ACH,INV-1072
+P5067,26/07/2026,Ridgeway Coffee Roasters,rosa@ridgewaycoffee.com,900.00,Zelle,
+P5068,26/07/2026,COPPERLINE MEDSPA,alana@copperlinemedspa.com,900.00,card,INV-1069
+P5069,26/07/2026,PASTOR REGGIE PRICE,media@cypressdfw.org,240.00,card,INV-1066
+P5070,27/07/2026,SUNSET ATHLETICS,mateo@sunsetfit.co,900.00,card,
+P5071,30/07/2026,PASTOR REGGIE PRICE,media@cypressdfw.org,240.00,Zelle,
+P5072,30/07/2026,Evergreen Bridal,carmen@evergreenbridal.com,900.00,Zelle,
+P5074,30/07/2026,FAITH & FIRE PODCAST,angela@faithandfire.fm,300.00,ACH,
+P5075,01/08/2026,HALE AUTO,kelsey.hale.detail@gmail.com,900.00,ACH,INV-1073
+P5076,01/08/2026,Carmen Ibarra,carmen@evergreenbridal.com,900.00,card,INV-1078
+P5077,02/08/2026,Victor Ibarra,victor@ibarrainsures.com,2250.00,ACH,INV-1084
+P5078,03/08/2026,LUNA FAMILY THERAPY,smalik@lunafamilytherapy.com,1500.00,Zelle,
+P5079,04/08/2026,TALLGRASS DIGITAL LLC,sofia@tallgrassmktg.com,2700.00,ACH,Tallgrass Jul invoices
+P5080,07/08/2026,CYPRESS CHURCH,media@cypressdfw.org,240.00,card,INV-1089
+P5081,10/08/2026,MAGNOLIA CHIROPRACTIC,drnovak@magnoliachiro.com,2500.00,card,INV-1085
+P5082,11/08/2026,Joy Webb,joy@redoakrealty.com,1500.00,card,
+P5083,12/08/2026,Sullivan Dental PLLC,hello@sullivandental.com,1500.00,Zelle,
+P5084,14/08/2026,CARMEN ORTIZ,carmen@crownmedspa.com,1500.00,card,
+P5085,17/08/2026,LUIS CASTILLO,,450.00,Zelle,half now half later
+P5086,19/08/2026,Darnell Shah,darnell@ntxfounders.fm,550.00,ACH,INV-1097
+P5087,19/08/2026,ANGELA WEBB,hello@ironcladdental.com,1500.00,ACH,INV-1079
+P5088,20/08/2026,MATEO MORALES,mateo@sunsetathletics.com,900.00,card,INV-1099
+P5089,21/08/2026,NORTH TEXAS FOUNDERS,darnell@ntxfounders.fm,550.00,card,
+P5090,23/08/2026,PAUL ZAMORA,info@zamoralaw.com,2500.00,card,INV-1083
+P5091,26/08/2026,Lakesidelab Coffee,ivy@thelakesidelab.coffee,900.00,card,INV-1087
+P5092,26/08/2026,Cypress Media Team,media@cypressdfw.org,240.00,ACH,INV-1101
+P5093,28/08/2026,Paul's Roofing LLC,paul@paulsroofingtx.com,900.00,ACH,INV-1091
+P5094,29/08/2026,Ridgeway Roasters,rosa@ridgewaycoffee.com,900.00,card,INV-1100
+P5095,31/08/2026,COPPERLINE MED SPA,alana@copperlinemedspa.com,900.00,Zelle,
+P5096,01/09/2026,PASTOR REGGIE PRICE,media@cypressdfw.org,240.00,ACH,INV-1093
+P5097,01/09/2026,Dr. Simone Malik,smalik@lunafamilytherapy.com,1500.00,card,INV-1103
+P5098,01/09/2026,RED OAK REALTY,joy@redoakrealty.com,1500.00,card,INV-1106
+P5099,02/09/2026,ANGELA VEGA,,900.00,Zelle,august sessions
+P5100,03/09/2026,TALLGRASS DIGITAL LLC,sofia@tallgrassmktg.com,1800.00,ACH,Tallgrass Aug invoices
+P5101,03/09/2026,ISAAC NOVAK,isaac.novak.detail@gmail.com,1500.00,ACH,
+P5102,03/09/2026,Ibarra Ins,victor@ibarrainsures.com,2500.00,card,INV-1110
+P5103,05/09/2026,REDBIRD BUILDERS LLC,isaac@redbird.build,1500.00,card,INV-1108
+P5104,05/09/2026,BROOKE SULLIVAN,bsullivan@sullivanfamilylaw.com,900.00,card,
+P5105,08/09/2026,Evergreen Bridal,carmen@evergreenbridal.com,900.00,Zelle,INV-1115
+P5106,12/09/2026,Cypress Church,media@cypressdfw.org,240.00,card,INV-1117
+P5107,13/09/2026,PAUL ZAMORA,info@zamoralaw.com,2500.00,card,INV-1112
+P5108,13/09/2026,Faith & Fire,angela@faithandfire.fm,300.00,card,
+P5109,14/09/2026,Lakeside Lab,ivy@thelakesidelab.coffee,900.00,Zelle,INV-1119
+P5110,16/09/2026,Cypress Church,media@cypressdfw.org,240.00,Zelle,
+P5111,20/09/2026,LUISS ROOFING,luis@luissroofingtx.com,900.00,card,INV-1127
+P5112,20/09/2026,NORTH TEXAS FOUNDERS,darnell@ntxfounders.fm,550.00,card,
+P5113,21/09/2026,Darnell Shah,darnell@ntxfounders.fm,550.00,card,INV-1116
+P5114,24/09/2026,Cypress Church,media@cypressdfw.org,240.00,card,INV-1131
+P5115,27/09/2026,Sunset,mateo@sunsetathletics.com,900.00,card,INV-1121
+P5116,28/09/2026,EVERGREEN BRIDAL,carmen@evergreenbridal.com,900.00,Zelle,INV-1135
+P5117,02/10/2026,Red Oak Realty,joy@redoakrealty.com,1500.00,Zelle,
+P5118,03/10/2026,TALLGRASS DIGITAL LLC,sofia@tallgrassmktg.com,900.00,ACH,Tallgrass Sep invoices
+P5119,04/10/2026,Ridgeway Coffee Roasters,rosa@ridgewaycoffee.com,900.00,card,INV-1128
+P5120,05/10/2026,Crown,carmen@crownmedspa.com,1500.00,card,INV-1124

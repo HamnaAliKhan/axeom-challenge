@@ -1,0 +1,10 @@
+# Daily log
+
+## Day 1 (2026-11-05)
+
+- **Session 1. What I did:** Read both PDFs and every row of the 8 data files before writing code. Noted the traps I could see by eye: same names for different businesses (two Sullivans, Red Oak vs Redoak, two Darnells, two Pauls, three Carmens, two Novaks), one business under many names (Cypress / Cypress DFW / Cypress Media Team / Pastor Reggie Price), a payer that is not a client (Tallgrass Digital), a rename (Sunset Fitness → Sunset Athletics), a typo email (`sullivandental.con`), and two date formats (bookings MM/DD, payments DD/MM).
+- Picked plain JavaScript for one engine file (`app/engine.js`) that runs both in Node (to make answers.json) and in the browser (for the "Add new files" button). This means the live app and my answers can't disagree.
+- Built parsing plus identity resolution. Lead rows link email to phone. A business is keyed by its email domain, so the `.con` typo merges with `.com`. Booking names override the booking email only when the name shares nothing with the email's business (the agency case).
+- **What went wrong, and how I fixed it:** In the first version the fuzzy name matcher put Sullivan Family Law's bookings under Zamora Law, because "law" was the only distinctive word. It also put "Novak Detailing" under Hale Auto Detailing, because of "detailing". I replaced "any distinctive token wins" with scored token overlap, added initials ("PT" = Physical Therapy), and only override a booking email when the name has nothing in common with that email's business. A second bug: the label "Tallgrass - Glow" was saved as a Glow alias, so the word "tallgrass" pointed at Glow. Fixed by keeping "A - B" labels for exact matches only.
+- **How I checked it:** I dumped every distinct (file, name, email) → client mapping (315 rows) and read all of it. Result: 29 clients plus 1 payer (Tallgrass), and every row is correct.
+- **Where the AI was wrong:** see `ai_log.md`. I misread a phone number at first (I thought a voice note from "Nina" came from another lead's number). The engine output showed the number really is ABC Homecare's, so I dropped that "trap".

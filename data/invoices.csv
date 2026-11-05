@@ -1,0 +1,148 @@
+invoice_no,bill_to,email,issued,due,amount,status,memo
+INV-1001,Greenway WP,nhale@greenwaywp.com,2026-04-01,2026-04-15,2500.00,paid,Monthly retainer April
+INV-1002,Cypress Church,media@cypressdfw.org,2026-04-02,2026-04-16,300.00,paid,
+INV-1003,Faith & Fire Podcast,angela@faithandfire.fm,2026-04-07,2026-04-21,300.00,paid,Podcast Studio 2hr 4/6
+INV-1004,Dr. Gloria Sullivan,hello@sullivandental.com,2026-04-09,2026-04-23,1500.00,paid,
+INV-1005,Redbird Builders LLC,isaac@redbird.build,2026-04-11,2026-04-25,1500.00,paid,B004 Content Day
+INV-1006,Faith & Fire,angela@faithandfire.fm,2026-04-14,2026-04-28,300.00,paid,B006 Podcast Studio 2hr
+INV-1007,Paul's Roofing,paul@paulsroofingtx.com,2026-04-15,2026-04-29,900.00,paid,
+INV-1008,North Texas Founders,darnell@ntxfounders.fm,2026-04-15,2026-04-29,550.00,paid,Podcast Studio 4hr 4/13
+INV-1009,Cypress Media Team,media@cypressdfw.org,2026-04-16,2026-04-30,300.00,paid,B005 Podcast Studio 2hr
+INV-1010,Crown Med Spa,carmen@crownmedspa.com,2026-04-20,2026-05-04,1500.00,paid,
+INV-1011,Cypress Church,media@cypressdfw.org,2026-04-20,2026-05-04,300.00,paid,
+INV-1012,Cypress Church,media@cypressdfw.org,2026-04-28,2026-05-12,300.00,paid,
+INV-1013,Carmen Ibarra,carmen@evergreenbridal.com,2026-04-28,2026-05-12,900.00,paid,
+INV-1014,Faith & Fire,angela@faithandfire.fm,2026-04-30,2026-05-14,300.00,paid,Podcast Studio 2hr 4/27
+INV-1015,Greenway Wealth,nhale@greenwaywp.com,2026-05-01,2026-05-15,2500.00,paid,Monthly retainer May
+INV-1016,Zamora Law Firm PLLC,info@zamoralaw.com,2026-05-01,2026-05-15,2500.00,paid,Monthly retainer May
+INV-1017,North Texas Founders,darnell@ntxfounders.fm,2026-05-02,2026-05-16,550.00,paid,Podcast Studio 4hr 4/30
+INV-1018,Cypress Church,media@cypressdfw.org,2026-05-04,2026-05-18,240.00,paid,
+INV-1019,Angela Vega,angela@faithandfire.fm,2026-05-08,2026-05-22,300.00,paid,Podcast Studio 2hr 5/5
+INV-1020,Paul's Roofing LLC,paul@paulsroofingtx.com,2026-05-11,2026-05-25,900.00,paid,B019 Reels Pack
+INV-1021,Mateo Morales,mateo@sunsetfit.co,2026-05-13,2026-05-27,900.00,paid,
+INV-1022,F&F Podcast,angela@faithandfire.fm,2026-05-13,2026-05-27,300.00,paid,Podcast Studio 2hr 5/13
+INV-1023,Cypress DFW,media@cypressdfw.org,2026-05-14,2026-05-28,240.00,paid,
+INV-1024,Copperline Medspa,alana@copperlinemedspa.com,2026-05-16,2026-05-30,900.00,paid,
+INV-1025,NTX Founders,darnell@ntxfounders.fm,2026-05-17,2026-05-31,550.00,paid,
+INV-1026,Redbird,isaac@redbird.build,2026-05-22,2026-06-05,1500.00,paid,B029 Content Day
+INV-1027,Beacon Barbershop,alan@beaconbarbers.com,2026-05-23,2026-06-06,900.00,paid,
+INV-1028,Cypress DFW,media@cypressdfw.org,2026-05-24,2026-06-07,240.00,paid,Podcast Studio 2hr 5/22
+INV-1029,Faith & Fire Podcast,angela@faithandfire.fm,2026-05-26,2026-06-09,300.00,paid,B030 Podcast Studio 2hr
+INV-1030,Greenway WP,nhale@greenwaywp.com,2026-06-01,2026-06-15,2500.00,paid,Monthly retainer June
+INV-1031,Ibarra Insurance Group,victor@ibarrainsures.com,2026-06-01,2026-06-15,2500.00,paid,Monthly retainer June
+INV-1032,Magnolia Chiropractic,drnovak@magnoliachiro.com,2026-06-01,2026-06-15,2500.00,paid,Monthly retainer June
+INV-1033,Zamora Law Firm PLLC,info@zamoralaw.com,2026-06-01,2026-06-15,2500.00,paid,Monthly retainer June
+INV-1034,Cypress Church,media@cypressdfw.org,2026-06-01,2026-06-15,240.00,paid,B033 Podcast Studio 2hr
+INV-1035,Gloria Sullivan DDS,hello@sullivandental.com,2026-06-02,2026-06-16,1500.00,paid,B036 Content Day
+INV-1036,Ironclad Dental,hello@ironcladdental.com,2026-06-02,2026-06-16,1500.00,paid,
+INV-1037,Carmen Ibarra,carmen@evergreenbridal.com,2026-06-03,2026-06-17,900.00,paid,
+INV-1038,Red Oak Realty,joy@redoakrealty.com,2026-06-04,2026-06-18,1500.00,paid,B032 Content Day
+INV-1039,NTX Founders,darnell@ntxfounders.fm,2026-06-04,2026-06-18,550.00,paid,
+INV-1040,Angela Vega,angela@faithandfire.fm,2026-06-08,2026-06-22,300.00,paid,
+INV-1041,Paul's Roofing,paul@paulsroofingtx.com,2026-06-10,2026-06-24,900.00,paid,
+INV-1042,Tallgrass Digital,sofia@tallgrassmktg.com,2026-06-11,2026-06-25,900.00,paid,B041 Reels Pack
+INV-1043,Cypress Media Team,media@cypressdfw.org,2026-06-12,2026-06-26,240.00,paid,
+INV-1044,Crown Med Spa - Frisco,carmen@crownmedspa.com,2026-06-13,2026-06-27,1500.00,paid,
+INV-1045,Sunset Fitness,mateo@sunsetfit.co,2026-06-16,2026-06-30,900.00,paid,
+INV-1046,Darnell Shah,darnell@ntxfounders.fm,2026-06-16,2026-06-30,550.00,paid,
+INV-1047,Sullivan Law,bsullivan@sullivanfamilylaw.com,2026-06-17,2026-07-01,900.00,paid,Reels Pack 6/16
+INV-1048,Copperline Med Spa - Plano,alana@copperlinemedspa.com,2026-06-18,2026-07-02,900.00,paid,
+INV-1049,F&F Podcast,angela@faithandfire.fm,2026-06-22,2026-07-06,300.00,paid,B052 Podcast Studio 2hr
+INV-1050,The Lakeside Lab,ivy@thelakesidelab.coffee,2026-06-24,2026-07-08,900.00,paid,
+INV-1051,Alan Bennett,alan@beaconbarbers.com,2026-06-25,2026-07-09,900.00,paid,B054 Reels Pack
+INV-1052,Cypress Church,media@cypressdfw.org,2026-06-25,2026-07-09,240.00,paid,B051 Podcast Studio 2hr
+INV-1053,Evergreen Bridal Boutique,carmen@evergreenbridal.com,2026-06-30,2026-07-14,900.00,paid,B056 Reels Pack
+INV-1054,Greenway WP,nhale@greenwaywp.com,2026-07-01,2026-07-15,2500.00,paid,Monthly retainer July
+INV-1055,Ibarra Ins,victor@ibarrainsures.com,2026-07-01,2026-07-15,2500.00,paid,Monthly retainer July
+INV-1056,Zamora Law Firm,info@zamoralaw.com,2026-07-01,2026-07-15,2500.00,paid,Monthly retainer July
+INV-1057,Magnolia Chiropractic,drnovak@magnoliachiro.com,2026-07-01,2026-07-15,2500.00,paid,Monthly retainer July
+INV-1058,NTX Founders,darnell@ntxfounders.fm,2026-07-02,2026-07-16,550.00,paid,
+INV-1059,Tallgrass Digital,sofia@tallgrassmktg.com,2026-07-03,2026-07-17,900.00,paid,
+INV-1060,Faith & Fire,angela@faithandfire.fm,2026-07-03,2026-07-17,300.00,paid,Podcast Studio 2hr 7/3
+INV-1061,Cypress Church,media@cypressdfw.org,2026-07-05,2026-07-19,240.00,paid,B058 Podcast Studio 2hr
+INV-1062,Trinity Gym,darnell@trinitygym.co,2026-07-06,2026-07-20,900.00,paid,Reels Pack 7/6
+INV-1063,Redbird,isaac@redbird.build,2026-07-08,2026-07-22,1500.00,paid,B060 Content Day
+INV-1064,Tallgrass Digital,sofia@tallgrassmktg.com,2026-07-09,2026-07-23,900.00,paid,
+INV-1065,Paul's Roofing,paul@paulsroofingtx.com,2026-07-10,2026-07-24,900.00,paid,Reels Pack 7/7
+INV-1066,Cypress DFW,media@cypressdfw.org,2026-07-14,2026-07-28,240.00,paid,
+INV-1067,Sullivan Law,bsullivan@sullivanfamilylaw.com,2026-07-15,2026-07-29,900.00,paid,B065 Reels Pack
+INV-1068,Faith and Fire,angela@faithandfire.fm,2026-07-16,2026-07-30,300.00,paid,Podcast Studio 2hr 7/13
+INV-1069,Copperline Medspa,alana@copperlinemedspa.com,2026-07-17,2026-07-31,900.00,paid,Reels Pack 7/16
+INV-1070,Ridgeway Coffee Roasters,rosa@ridgewaycoffee.com,2026-07-19,2026-08-02,900.00,paid,Reels Pack 7/16
+INV-1071,Dr. Simone Malik,smalik@lunafamilytherapy.com,2026-07-19,2026-08-02,1500.00,paid,B073 Content Day
+INV-1072,Cypress Church,media@cypressdfw.org,2026-07-21,2026-08-04,240.00,unpaid,
+INV-1073,Hale Auto Detailing,kelsey.hale.detail@gmail.com,2026-07-23,2026-08-06,900.00,paid,
+INV-1074,Red Oak Realty LLC,joy@redoakrealty.com,2026-07-24,2026-08-07,1500.00,paid,Content Day 7/22
+INV-1075,Sunset Fit,mateo@sunsetfit.co,2026-07-24,2026-08-07,900.00,paid,B078 Reels Pack
+INV-1076,Crown Med Spa,carmen@crownmedspa.com,2026-07-27,2026-08-10,1500.00,paid,Content Day 7/27
+INV-1077,Tallgrass Digital,sofia@tallgrassmktg.com,2026-07-27,2026-08-10,900.00,paid,
+INV-1078,Carmen Ibarra,carmen@evergreenbridal.com,2026-07-28,2026-08-11,900.00,paid,B084 Reels Pack
+INV-1079,Ironclad Dental,hello@ironcladdental.com,2026-07-28,2026-08-11,1500.00,paid,B080 Content Day
+INV-1080,Sullivan Dental,hello@sullivandental.com,2026-07-28,2026-08-11,1500.00,paid,B079 Content Day
+INV-1081,Faith and Fire,angela@faithandfire.fm,2026-07-28,2026-08-11,300.00,paid,B082 Podcast Studio 2hr
+INV-1082,Cypress Media Team,media@cypressdfw.org,2026-07-29,2026-08-12,240.00,paid,
+INV-1083,Zamora Law Firm,info@zamoralaw.com,2026-08-01,2026-08-15,2500.00,paid,Monthly retainer August
+INV-1084,Ibarra Insurance,victor@ibarrainsures.com,2026-08-01,2026-08-15,2250.00,paid,Monthly retainer August
+INV-1085,Dr. Novak,drnovak@magnoliachiro.com,2026-08-01,2026-08-15,2500.00,paid,Monthly retainer August
+INV-1086,North Texas Founders,darnell@ntxfounders.fm,2026-08-03,2026-08-17,550.00,paid,Podcast Studio 4hr 7/31
+INV-1087,Lakesidelab Coffee,ivy@thelakesidelab.coffee,2026-08-04,2026-08-18,900.00,paid,
+INV-1088,Faith & Fire,angela@faithandfire.fm,2026-08-05,2026-08-19,300.00,unpaid,B090 Podcast Studio 2hr
+INV-1089,Cypress Media Team,media@cypressdfw.org,2026-08-06,2026-08-20,240.00,paid,
+INV-1090,Luis's Roofing LLC,luis@luissroofingtx.com,2026-08-07,2026-08-21,900.00,partial,B092 Reels Pack
+INV-1091,Paul Tran,paul@paulsroofingtx.com,2026-08-10,2026-08-24,900.00,paid,Reels Pack 8/10
+INV-1092,Tallgrass Digital,sofia@tallgrassmktg.com,2026-08-12,2026-08-26,900.00,paid,
+INV-1093,Cypress Media Team,media@cypressdfw.org,2026-08-14,2026-08-28,240.00,paid,Podcast Studio 2hr 8/13
+INV-1094,Greg Reed,greg@redoakrg.com,2026-08-14,2026-08-28,1500.00,unpaid,
+INV-1095,Angela Vega,angela@faithandfire.fm,2026-08-17,2026-08-31,300.00,unpaid,
+INV-1096,Trinity Gym TX,darnell@trinitygym.co,2026-08-17,2026-08-31,900.00,paid,
+INV-1097,Darnell Shah,darnell@ntxfounders.fm,2026-08-17,2026-08-31,550.00,paid,Podcast Studio 4hr 8/17
+INV-1098,Brooke Sullivan,bsullivan@sullivanfamilylaw.com,2026-08-18,2026-09-01,900.00,paid,B099 Reels Pack
+INV-1099,Sunset Athletics,mateo@sunsetathletics.com,2026-08-18,2026-09-01,900.00,paid,Reels Pack 8/18
+INV-1100,Ridgeway Coffee Roasters,rosa@ridgewaycoffee.com,2026-08-20,2026-09-03,900.00,paid,B104 Reels Pack
+INV-1101,Cypress DFW,media@cypressdfw.org,2026-08-24,2026-09-07,240.00,paid,B106 Podcast Studio 2hr
+INV-1102,Hale Detailing,kelsey.hale.detail@gmail.com,2026-08-24,2026-09-07,900.00,unpaid,B105 Reels Pack
+INV-1103,Luna Family Therapy,smalik@lunafamilytherapy.com,2026-08-25,2026-09-08,1500.00,paid,
+INV-1104,Copperline Med Spa,alana@copperlinemedspa.com,2026-08-26,2026-09-09,900.00,paid,
+INV-1105,Tallgrass Digital,sofia@tallgrassmktg.com,2026-08-28,2026-09-11,900.00,paid,B109 Reels Pack
+INV-1106,Red Oak Realty,joy@redoakrealty.com,2026-08-31,2026-09-14,1500.00,paid,Content Day 8/31
+INV-1107,Novak Auto Detailing,isaac.novak.detail@gmail.com,2026-08-31,2026-09-14,1500.00,paid,B117 Content Day
+INV-1108,Redbird & Co Builders,isaac@redbird.build,2026-08-31,2026-09-14,1500.00,paid,B115 Content Day
+INV-1109,Angela Vega,angela@faithandfire.fm,2026-08-31,2026-09-14,300.00,unpaid,
+INV-1110,Ibarra Insurance Group,victor@ibarrainsures.com,2026-09-01,2026-09-15,2500.00,paid,Monthly retainer September
+INV-1111,Dr. Novak,drnovak@magnoliachiro.com,2026-09-01,2026-09-15,2500.00,unpaid,Monthly retainer September
+INV-1112,Zamora Law Firm,info@zamoralaw.com,2026-09-01,2026-09-15,2500.00,paid,Monthly retainer September
+INV-1113,ABC Homecare,nina@abchomecare.com,2026-09-01,2026-09-15,1500.00,unpaid,Content Day 9/1
+INV-1114,Cypress DFW,media@cypressdfw.org,2026-09-01,2026-09-15,240.00,paid,B112 Podcast Studio 2hr
+INV-1115,Evergreen Bridal,carmen@evergreenbridal.com,2026-09-01,2026-09-15,900.00,paid,Reels Pack 8/31
+INV-1116,NTX Founders,darnell@ntxfounders.fm,2026-09-03,2026-09-17,550.00,paid,B114 Podcast Studio 4hr
+INV-1117,Cypress Media Team,media@cypressdfw.org,2026-09-09,2026-09-23,240.00,paid,
+INV-1118,Faith & Fire Podcast,angela@faithandfire.fm,2026-09-10,2026-09-24,300.00,paid,Podcast Studio 2hr 9/9
+INV-1119,Lakeside Lab,ivy@thelakesidelab.coffee,2026-09-11,2026-09-25,900.00,paid,
+INV-1120,Cypress DFW,media@cypressdfw.org,2026-09-15,2026-09-29,240.00,unpaid,Podcast Studio 2hr 9/14
+INV-1121,Sunset Athletics,mateo@sunsetathletics.com,2026-09-15,2026-09-29,900.00,paid,B132 Reels Pack
+INV-1122,Tallgrass Digital,sofia@tallgrassmktg.com,2026-09-16,2026-09-30,900.00,paid,B129 Reels Pack
+INV-1123,Trinity Gym TX,darnell@trinitygym.co,2026-09-17,2026-10-01,900.00,unpaid,
+INV-1124,Crown Med Spa - Plano,carmen@crownmedspa.com,2026-09-17,2026-10-01,1500.00,unpaid,Content Day 9/15
+INV-1125,North Texas Founders,darnell@ntxfounders.fm,2026-09-17,2026-10-01,550.00,paid,
+INV-1126,Red Oak Realty LLC,joy@redoakrealty.com,2026-09-17,2026-10-01,1500.00,paid,B140 Content Day
+INV-1127,Luis's Roofing,luis@luissroofingtx.com,2026-09-17,2026-10-01,900.00,paid,
+INV-1128,Ridgeway Coffee Roasters,rosa@ridgewaycoffee.com,2026-09-19,2026-10-03,900.00,paid,Reels Pack 9/17
+INV-1129,Gloria Sullivan DDS,hello@sullivandental.com,2026-09-22,2026-10-06,1500.00,unpaid,B135 Content Day
+INV-1130,F&F Podcast,angela@faithandfire.fm,2026-09-22,2026-10-06,300.00,unpaid,B138 Podcast Studio 2hr
+INV-1131,Cypress Media Team,media@cypressdfw.org,2026-09-22,2026-10-06,240.00,paid,Podcast Studio 2hr 9/21
+INV-1132,Hale Auto,kelsey.hale.detail@gmail.com,2026-09-23,2026-10-07,900.00,unpaid,Reels Pack 9/22
+INV-1133,Tallgrass Digital,sofia@tallgrassmktg.com,2026-09-25,2026-10-09,900.00,unpaid,
+INV-1134,Sullivan Family Law,bsullivan@sullivanfamilylaw.com,2026-09-26,2026-10-10,900.00,unpaid,B141 Reels Pack
+INV-1135,Carmen Ibarra,carmen@evergreenbridal.com,2026-09-27,2026-10-11,900.00,paid,
+INV-1136,Joy Webb,joy@redoakrealty.com,2026-09-27,2026-10-11,1500.00,unpaid,
+INV-1137,Cypress Media Team,media@cypressdfw.org,2026-09-28,2026-10-12,240.00,unpaid,Podcast Studio 2hr 9/28
+INV-1138,Magnolia Chiro,drnovak@magnoliachiro.com,2026-10-01,2026-10-15,2500.00,unpaid,Monthly retainer October
+INV-1139,Zamora,info@zamoralaw.com,2026-10-01,2026-10-15,2500.00,unpaid,Monthly retainer October
+INV-1140,Ibarra Ins,victor@ibarrainsures.com,2026-10-01,2026-10-15,2500.00,unpaid,Monthly retainer October
+INV-1141,Alan Bennett,alan@beaconbarbers.com,2026-10-02,2026-10-16,900.00,unpaid,
+INV-1142,NTX Founders,darnell@ntxfounders.fm,2026-10-04,2026-10-18,550.00,unpaid,Podcast Studio 4hr 10/1
+INV-1143,Copperline Med Spa,alana@copperlinemedspa.com,2026-10-04,2026-10-18,900.00,unpaid,Reels Pack 10/1
+INV-1144,Novak Auto,isaac.novak.detail@gmail.com,2026-10-05,2026-10-19,900.00,unpaid,B150 Reels Pack
+INV-1145,Redoak RG,greg@redoakrg.com,2026-10-05,2026-10-19,1500.00,unpaid,
+INV-1146,Faith and Fire,angela@faithandfire.fm,2026-10-06,2026-10-20,300.00,unpaid,
+INV-1147,Crown Med Spa,carmen@crownmedspa.com,2026-07-27,2026-08-10,1500.00,void,Content Day 7/27
