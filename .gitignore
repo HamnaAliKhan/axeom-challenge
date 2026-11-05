@@ -1,3 +1,6 @@
 node_modules/
 .env
 out/jev_raw.json
+out/jev_report.md
+out/jev_playground_answers.json
+out/jev-labels.js
