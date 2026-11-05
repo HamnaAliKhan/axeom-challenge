@@ -642,7 +642,7 @@
   const FOLLOWUP = /did anyone see|not fixed|still has the same problem|already told you|second time i ask|still wrong|again\. i asked/i;
   const CATS = [
     ['spam', /followers|crypto|rank #?1|free audit|domain expires|final notice|partnership offer|10x guaranteed|run your ads for free/i],
-    ['churn', /we'?ll pause|whether we continue|talk about (our|the) contract|cancel (our|the) (contract|retainer)|not happy|nothing personal/i],
+    ['churn', /\bpaus(e|ing)\b|whether we continue|talk about (our|the) contract|cancel (our|the|my) (contract|retainer|account|plan|videos)|(stop|end) (our|the) (videos|contract|retainer|work)|not (going to )?renew|another (agency|studio)|last month with you|not happy|nothing personal/i],
     ['payment', /cash is tight|pay (the|once|later)|sent half|rest when|accounting will handle|invoice|we already paid/i],
     ['referral', /my friend|my cousin|gave her your number|she'?ll reach out|he needs videos|call him/i],
     ['upsell', /every month\?|what would that cost|short clips|how much for|package where/i],
@@ -729,7 +729,7 @@
 
     // standing instructions ("always say the full name") are requests about every future video
     data.messages.filter(m => m.cat === 'info' && /full name|always (say|use|write)/i.test(m.text)).forEach(m => {
-      requests.push({ msg: m, video: '', client: m.client, date: m.date, channel: m.channel, edit: 'standing', label: 'Standing instruction: ' + m.text.replace(/^.*?(please|in the videos)\s*/i, '').slice(0, 70), captured: false, standing: true, how: 'applies to all future videos', title: '' });
+      requests.push({ msg: m, video: '', client: m.client, date: m.date, channel: m.channel, edit: 'standing', label: 'Standing instruction: ' + (m.text.split(/(?<=[.!?])\s+/).find(x => /full name|always/i.test(x)) || m.text).replace(/[.!]$/, ''), captured: false, standing: true, how: 'applies to all future videos', title: '' });
     });
     requests.sort((a, b) => (a.date + a.msg.time).localeCompare(b.date + b.msg.time));
 
@@ -867,7 +867,9 @@
       if (!upcoming && last && days(last, today) > 35) { score += 3; evidence.push(`No shoot since ${last} and nothing booked`); }
       const unanswered = msgs.filter(m => m.cat === 'churn' && !c.messages.some(o => o.direction === 'to' && o.date >= m.date));
       if (unanswered.length) evidence.push(`No reply from us on record to: ${unanswered.map(m => m.date).join(', ')}`);
-      out.push({ client: k, name: c.name, score, evidence, lost: lost.length, followups: fups.length, last, upcoming, gone: churnMsgs.some(m => /pause|cancel/i.test(m.text)) && !upcoming && days(last || today, today) > 30 });
+      const gone = churnMsgs.some(m => /pause|cancel/i.test(m.text)) && !upcoming && days(last || today, today) > 30;
+      const risk = !gone && (score >= 15 || churnMsgs.some(m => m.date >= addDays(today, -30)));
+      out.push({ client: k, name: c.name, score, evidence, lost: lost.length, followups: fups.length, last, upcoming, gone, risk });
     });
     return out.sort((a, b) => b.score - a.score);
   }
@@ -915,7 +917,11 @@
     const clients = [...id.clientSet].map(k => {
       const c = C.get(k);
       const names = new Map();
-      const add = n => { n = String(n || '').trim(); if (!n) return; const key = n.toLowerCase(); if (!names.has(key)) names.set(key, n); };
+      const add = n => {
+        n = String(n || '').trim(); if (!n) return;
+        if (n === n.toUpperCase() && /[A-Z]{3}/.test(n)) n = n.toLowerCase().replace(/\b[a-z]/g, ch => ch.toUpperCase()); // bank exports shout
+        const key = n.toLowerCase(); if (!names.has(key)) names.set(key, n);
+      };
       c.names.forEach((_, n) => add(n)); c.leads.forEach(l => add(l.business)); c.payments.forEach(p => add(p.name)); c.persons.forEach(add);
       names.delete(c.name.toLowerCase());
       const inv = money.invoices.filter(i => i.client === k || i.payer === k);
@@ -953,41 +959,46 @@
     const recent = (d, n) => d >= addDays(today, -n);
 
     // 1. clients about to leave
-    churn.filter(x => x.score >= 15 && !x.gone).forEach(x => {
+    churn.filter(x => x.risk).forEach(x => {
       const c = C.get(x.client);
-      const who = [...c.persons].find(p => /kim/i.test(p)) || [...c.persons][0] || c.name;
-      const contact = c.leads.find(l => l.name === who) || c.leads[0] || {};
+      // call whoever wrote the latest "we may leave" message
+      const warn = c.messages.filter(m => m.direction === 'from' && m.cat === 'churn').pop();
+      const byLead = warn && c.leads.find(l => (warn.email && l.email === warn.email) || (warn.phone && l.phone === warn.phone));
+      const who = (warn && (warn.person || (byLead && byLead.name))) || [...c.persons][0] || c.name;
+      const contact = byLead || c.leads.find(l => l.name === who) || c.leads[0] || {};
       const openLost = R.lost.filter(r => r.client === x.client);
       add({ id: 'churn-' + x.client, kind: 'client', priority: 1000 + x.score, client: x.client, clientName: c.name,
         title: `${c.name} may leave. Call ${who.split(' ')[0]} today?`,
         why: x.evidence.slice(0, 3).join(' · '),
-        yes: 'Call now', draft: { channel: 'phone', to: fmtPhone(contact.phone || [...c.phones][0]), text: `Hi ${who.split(' ')[0]}, it's Zaid from Axeom. I saw your note about the contract. You're right that we've missed things: ${openLost.slice(-3).map(r => (r.title || 'your videos') + ' (' + r.label.toLowerCase() + ')').join(', ')}. I'm fixing them myself this week and I want to walk you through how we'll stop it happening. When can we talk?` } });
+        yes: 'Call now', draft: { channel: 'phone', to: fmtPhone(contact.phone || [...c.phones][0]), text: `Hi ${who.split(' ')[0]}, it's Zaid from Axeom. I saw your note about the contract. You're right that we've missed things: ${openLost.slice(-3).map(r => r.standing ? 'your instruction "' + r.label.replace(/^Standing instruction:s*/, '') + '"' : r.title + ' (' + r.label.toLowerCase() + ')').join(', ')}. I'm fixing them myself this week and I want to walk you through how we'll stop it happening. When can we talk?` } });
     });
 
     // 2. edit requests that never reached the board (recent, still open)
     R.lost.filter(r => recent(r.date, 30)).forEach(r => {
       const v = r.video && data.board.find(x => x.id === r.video);
-      add({ id: 'edit-' + r.msg.line, kind: 'edit', priority: 400 + (r.followedUp ? 150 : 0) + (30 - days(r.date, today)), client: r.client, clientName: name(r.client),
-        title: `${name(r.client)}: "${r.label}"${v ? ' on ' + v.title + ' (' + v.id + ')' : ''} never made it to the board. Add it?`,
-        why: `${r.channel} on ${r.date}${r.followedUp ? `, client chased ${r.followedUp}x` : ''}${r.vague ? '. Client said "the one we shot last week", so check which video' : ''}. "${r.msg.text.slice(0, 120)}"`,
+      add({ id: 'edit-' + r.msg.date + '-' + r.msg.time + '-' + r.client + '-' + r.edit, kind: 'edit', priority: 400 + (r.followedUp ? 150 : 0) + (30 - days(r.date, today)), client: r.client, clientName: name(r.client),
+        title: `${name(r.client)} asked${r.followedUp ? ' ' + (r.followedUp + 1) + ' times' : ''}: ${r.label.charAt(0).toLowerCase() + r.label.slice(1)}${v ? ' on ' + v.title + ' (' + v.id + ')' : ''}. Put it on the board?`,
+        why: `Sent by ${r.channel} on ${r.date}, never written on the board${r.vague ? '. They said "the one we shot last week", so check the video' : ''}. "${r.msg.text.slice(0, 120)}"`,
         yes: 'Add to board', draft: { channel: 'board', to: v ? `${v.id} (${v.editor})` : '', text: `${v ? v.id + ' ' + v.title + ': ' : ''}${r.label}` } });
     });
 
-    // 3. money: overdue invoices
+    // 3. money: overdue invoices. For a client who may leave, chasing money first makes the call harder: hold it.
+    const atRisk = new Set(churn.filter(x => x.risk).map(x => x.client));
+    const hold = k => atRisk.has(k) ? 'Hold this until after you have talked to them: they may leave. ' : '';
     money.overdue.forEach(i => {
       const c = C.get(i.payer);
       const lead = c && c.leads[0];
       const blocked = data.messages.filter(m => m.client === i.client && m.cat === 'payment' && m.date >= i.issued).pop();
-      add({ id: 'overdue-' + i.id, kind: 'money', priority: 200 + i.owed / 25 + i.daysLate, client: i.client, clientName: name(i.payer), amount: i.owed,
+      add({ id: 'overdue-' + i.id, kind: 'money', priority: 200 + i.owed / 25 + i.daysLate - (atRisk.has(i.client) ? 200 : 0), client: i.client, clientName: name(i.payer), amount: i.owed,
         title: `${name(i.payer)} owes ${usd(i.owed)} (${i.id}), ${i.daysLate} days late. Send a reminder?`,
-        why: (i.status !== i.truth ? `Billing tool says "${i.status}", bank says ${i.truth}. ` : '') + (blocked ? `They wrote on ${blocked.date}: "${blocked.text}"` : `Due ${i.due}.`),
+        why: hold(i.client) + (i.status !== i.truth ? `Billing tool says "${i.status}", bank says ${i.truth}. ` : '') + (blocked ? `They wrote on ${blocked.date}: "${blocked.text}"` : `Due ${i.due}.`),
         yes: 'Send reminder', draft: { channel: 'email', to: [...(c ? c.emails : [])][0] || '', text: `Hi${lead ? ' ' + lead.name.split(' ')[0] : ''}, a friendly reminder that invoice ${i.id} for ${usd(i.owed)} was due on ${i.due}. Can you let me know when it will be paid? Thank you! Zaid, Axeom` } });
     });
     // 4. work never billed
     money.neverBilled.forEach(n => {
-      add({ id: 'unbilled-' + (n.booking || n.client + n.month), kind: 'money', priority: 180 + n.amount / 25, client: n.client, clientName: name(n.client), amount: n.amount,
+      add({ id: 'unbilled-' + (n.booking || n.client + n.month), kind: 'money', priority: 180 + n.amount / 25 - (atRisk.has(n.client) ? 200 : 0), client: n.client, clientName: name(n.client), amount: n.amount,
         title: `${name(n.client)}: ${n.booking ? n.booking + ' (' + n.date + ')' : 'retainer for ' + n.month} was never billed. Create a ${usd(n.amount)} invoice?`,
-        why: n.why, yes: 'Create invoice', draft: { channel: 'billing', to: name(n.client), text: `Invoice ${name(n.client)} ${usd(n.amount)}: ${n.booking ? n.booking : 'Monthly retainer ' + n.month}` } });
+        why: hold(n.client) + n.why, yes: 'Create invoice', draft: { channel: 'billing', to: name(n.client), text: `Invoice ${name(n.client)} ${usd(n.amount)}: ${n.booking ? n.booking : 'Monthly retainer ' + n.month}` } });
     });
     // 5. money we owe back
     weOwe.forEach((w, i) => add({ id: 'owe-' + i + '-' + w.client, kind: 'money', priority: 260, client: w.client, clientName: name(w.client), amount: w.amount,
@@ -1004,7 +1015,7 @@
       title: `${l.name}${l.business ? ' (' + l.business + ')' : ''} asked ${l.waiting} days ago and never got a reply. Reply now?`,
       why: `${l.source} lead ${l.id}, ${l.created}. Leads answered the same day won 75% of the time; after 4+ days, 0%.`, yes: 'Send reply',
       draft: { channel: 'email', to: l.email, text: `Hi ${l.name.split(' ')[0]}, sorry for the slow reply to your message about videos${l.business ? ' for ' + l.business : ''}. Are you still interested? I'd love to show you what we've done for businesses like yours. Zaid, Axeom` } }));
-    leads.neverReplied.filter(l => l.existingClient && !churn.some(x => x.client === l.cluster && x.score >= 15)).forEach(l => add({ id: 'lead-' + l.id, kind: 'lead', priority: 240, client: l.cluster, clientName: l.clientName,
+    leads.neverReplied.filter(l => l.existingClient && !churn.some(x => x.client === l.cluster && x.risk)).forEach(l => add({ id: 'lead-' + l.id, kind: 'lead', priority: 240, client: l.cluster, clientName: l.clientName,
       title: `${l.clientName} (existing client) wrote in on ${l.created} and got no reply. Answer?`, why: `${l.source} form ${l.id} by ${l.name}. ${(data.messages.find(m => m.date === l.created && m.client === l.cluster) || {}).text || ''}`, yes: 'Reply', draft: { channel: 'email', to: l.email, text: `Hi ${l.name.split(' ')[0]}, thanks for your message, sorry for the delay!` } }));
     data.messages.filter(m => m.cat === 'upsell' && m.client && id.clientSet.has(m.client) && recent(m.date, 90)).forEach(m => {
       if (S.some(s => s.id === 'upsell-' + m.client)) return;
