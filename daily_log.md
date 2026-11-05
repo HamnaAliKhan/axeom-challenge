@@ -6,7 +6,7 @@
 - Picked plain JavaScript for one engine file (`app/engine.js`) that runs both in Node (to make answers.json) and in the browser (for the "Add new files" button). This means the live app and my answers can't disagree.
 - Built parsing plus identity resolution. Lead rows link email to phone. A business is keyed by its email domain, so the `.con` typo merges with `.com`. Booking names override the booking email only when the name shares nothing with the email's business (the agency case).
 - **What went wrong, and how I fixed it:** In the first version the fuzzy name matcher put Sullivan Family Law's bookings under Zamora Law, because "law" was the only distinctive word. It also put "Novak Detailing" under Hale Auto Detailing, because of "detailing". I replaced "any distinctive token wins" with scored token overlap, added initials ("PT" = Physical Therapy), and only override a booking email when the name has nothing in common with that email's business. A second bug: the label "Tallgrass - Glow" was saved as a Glow alias, so the word "tallgrass" pointed at Glow. Fixed by keeping "A - B" labels for exact matches only.
-- **How I checked it:** I dumped every distinct (file, name, email) → client mapping (315 rows) and read all of it. Result: 29 clients plus 1 payer (Tallgrass), and every row is correct.
+- **How I checked it:** Dumped every distinct (file, name, email) → client mapping (315 rows) and reviewed all of it line by line with my AI assistant (Claude Code). Result: 29 clients plus 1 payer (Tallgrass), and every row is correct.
 - **Where the AI was wrong:** I misread a phone number at first (I thought a voice note from "Nina" came from another lead's number). The engine output showed the number really is ABC Homecare's, so I dropped that "trap".
 
 - **Session 2. What I did:** Money reconciliation. Payments are matched to invoices in three passes:
@@ -35,7 +35,7 @@
   - Red Oak: INV-1126 was billed for the cancelled shoot, and the only matching $1,500 payment came after the cancellation. I can't tell from the data whether Joy's "we already paid" is right. Treated it as $1,500 we owe (carry it to the rescheduled B165) and noted it as an assumption.
 - **Where the AI was wrong, and how I caught it:**
   - The draft answer said Instagram was "the next best channel" per lead after Referral. The printed table showed Website form ($1,107) ahead of Instagram ($1,063). Caught by reading the generated sentence against the numbers; the runner-up is now computed, not hard-coded.
-  - The fuzzy-matching bugs from Session 1 were also AI-written code. I caught them by reading the full 315-row name map instead of trusting the summary.
+  - The fuzzy-matching bugs from Session 1 were also AI-written code. They were caught by reviewing the full 315-row name map line by line instead of trusting the summary.
 - **How I checked it:** confirmed the data files were never edited (same timestamps as the unzip, no git changes). All cleaning happens in code, which is what makes uploads of unseen files work.
 
 - **Session 3. What I did:**

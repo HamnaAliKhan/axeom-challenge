@@ -19,7 +19,7 @@
   - `build.js` bundles the data for the site.
   - `analyze.js` prints check reports: `node scripts/analyze.js data <clusters|money|requests|lost|insights|namemap>`.
   - `jev_triage.js` is the Jev job (designed and coded; not run, because TypeSafe needs paid credit, see `evidence/`).
-- **`out/name_map.txt`:** every name, spelling and sender in the data, and the client it was matched to. I read all 384 rows by hand.
+- **`out/name_map.txt`:** every name, spelling and sender in the data, and the client it was matched to. All 384 rows were reviewed line by line with AI help, and I went through them myself too.
 
 ## Run it
 
