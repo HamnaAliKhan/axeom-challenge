@@ -6,7 +6,7 @@
 
 **Clients: 29, plus 1 payer who is not a client.**
 - **How records are linked:** lead rows tie emails to phones. A business is identified by its email domain, so the `sullivandental.con` typo is the same business. Names are matched by scored word overlap, with prefixes ("Ins" = Insurance) and initials ("PT" = Physical Therapy).
-- **Checked by hand:** I read all 315 name-to-client matches (`out/name_map.txt`).
+- **Checked by hand:** I read all 384 name-to-client matches, including every message sender (`out/name_map.txt`).
 - **Kept apart:** Sullivan Dental and Sullivan Family Law, Red Oak Realty and Redoak Realty Group, the two Darnells, the two Pauls, the two Novaks.
 - **Merged:** Cypress Church, Cypress DFW, Cypress Media Team and "Pastor Reggie Price" are one client, and so are Sunset Fitness and Sunset Athletics (renamed).
 - **The payer:** Tallgrass Digital pays for Prime Pediatrics and Glow PT.

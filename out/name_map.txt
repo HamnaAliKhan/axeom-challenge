@@ -1,0 +1,385 @@
+# 384 distinct names/senders and the client each resolves to
+board     Alan Bennett                                           -> Beacon Barbershop
+board     Angela Webb DDS                                        -> Ironclad Dental
+board     Beacon Barbers                                         -> Beacon Barbershop
+board     Beacon Barbershop                                      -> Beacon Barbershop
+board     Carmen Ibarra                                          -> Evergreen Bridal Boutique
+board     Copperline Med Spa - Frisco                            -> Copperline Med Spa
+board     Copperline Med Spa - Plano                             -> Copperline Med Spa
+board     Copperline Med Spa                                     -> Copperline Med Spa
+board     Copperline Medspa                                      -> Copperline Med Spa
+board     Copperline                                             -> Copperline Med Spa
+board     Crown Med Spa - Frisco                                 -> Crown Med Spa
+board     Crown Med Spa - Plano                                  -> Crown Med Spa
+board     Crown Med Spa                                          -> Crown Med Spa
+board     Crown Medspa                                           -> Crown Med Spa
+board     Crown                                                  -> Crown Med Spa
+board     Dr Sullivan                                            -> Sullivan Dental PLLC
+board     Dr. Angela Webb                                        -> Ironclad Dental
+board     Dr. Novak                                              -> Magnolia Chiropractic
+board     Dr. Simone Malik                                       -> Luna Therapy
+board     Evergreen Bridal Boutique                              -> Evergreen Bridal Boutique
+board     Evergreen Bridal                                       -> Evergreen Bridal Boutique
+board     Gloria Sullivan DDS                                    -> Sullivan Dental PLLC
+board     Glow PT Dallas                                         -> Glow PT Dallas
+board     Glow PT                                                -> Glow PT Dallas
+board     Glow Physical Therapy                                  -> Glow PT Dallas
+board     Greenway WP                                            -> Greenway Wealth Partners
+board     Greenway Wealth Partners                               -> Greenway Wealth Partners
+board     Greenway Wealth                                        -> Greenway Wealth Partners
+board     Greg Reed                                              -> Redoak Realty Group
+board     Hale Auto Detailing                                    -> Hale Auto Detailing
+board     Hale Detailing                                         -> Hale Auto Detailing
+board     Ibarra Ins                                             -> Ibarra Insurance Group
+board     Ibarra Insurance Group                                 -> Ibarra Insurance Group
+board     Ibarra Insurance                                       -> Ibarra Insurance Group
+board     Ironclad Dental                                        -> Ironclad Dental
+board     Isaac Novak                                            -> Novak Auto Detailing
+board     Joy Webb                                               -> Red Oak Realty LLC
+board     Kelsey Hale                                            -> Hale Auto Detailing
+board     Lakeside Lab                                           -> Lakesidelab Coffee
+board     Lakesidelab Coffee                                     -> Lakesidelab Coffee
+board     Luis's Roofing LLC                                     -> Luis's Roofing LLC
+board     Luis's Roofing                                         -> Luis's Roofing LLC
+board     Luiss Roofing                                          -> Luis's Roofing LLC
+board     Luna Family Therapy                                    -> Luna Therapy
+board     Luna Therapy                                           -> Luna Therapy
+board     Magnolia Chiro                                         -> Magnolia Chiropractic
+board     Magnolia Chiropractic                                  -> Magnolia Chiropractic
+board     Mateo Morales                                          -> Sunset Athletics
+board     Nina Cho                                               -> ABC Homecare
+board     Novak Auto Detailing                                   -> Novak Auto Detailing
+board     Novak Detailing                                        -> Novak Auto Detailing
+board     Paul Tran                                              -> Paul's Roofing LLC
+board     Paul's Roofing LLC                                     -> Paul's Roofing LLC
+board     Paul's Roofing                                         -> Paul's Roofing LLC
+board     Pauls Roofing                                          -> Paul's Roofing LLC
+board     Prime Pediatrics                                       -> Prime Pediatrics
+board     Prime Peds                                             -> Prime Pediatrics
+board     Red Oak Realty LLC                                     -> Red Oak Realty LLC
+board     Red Oak Realty                                         -> Red Oak Realty LLC
+board     Redbird & Co Builders                                  -> Redbird & Co Builders
+board     Redbird Builders LLC                                   -> Redbird & Co Builders
+board     Redbird Builders                                       -> Redbird & Co Builders
+board     Redbird                                                -> Redbird & Co Builders
+board     Redoak RG                                              -> Redoak Realty Group
+board     Redoak Realty Group                                    -> Redoak Realty Group
+board     Ridgeway Coffee Roasters                               -> Ridgeway Coffee Roasters
+board     Ridgeway Coffee                                        -> Ridgeway Coffee Roasters
+board     Ridgeway Roasters                                      -> Ridgeway Coffee Roasters
+board     Sullivan Dental PLLC                                   -> Sullivan Dental PLLC
+board     Sullivan Dental                                        -> Sullivan Dental PLLC
+board     Sullivan Family Law PLLC                               -> Sullivan Family Law PLLC
+board     Sullivan Family Law                                    -> Sullivan Family Law PLLC
+board     Sullivan Law                                           -> Sullivan Family Law PLLC
+board     Sunset Athletics                                       -> Sunset Athletics
+board     Sunset Fit                                             -> Sunset Athletics
+board     Sunset Fitness                                         -> Sunset Athletics
+board     Sunset                                                 -> Sunset Athletics
+board     Tallgrass - Glow                                       -> Glow PT Dallas
+board     Tallgrass - Prime                                      -> Prime Pediatrics
+board     The Lakeside Lab                                       -> Lakesidelab Coffee
+board     Trinity Gym TX                                         -> Trinity Gym TX
+board     Trinity Gym                                            -> Trinity Gym TX
+board     Trinity                                                -> Trinity Gym TX
+board     Victor Ibarra                                          -> Ibarra Insurance Group
+board     Zamora Law Firm PLLC                                   -> Zamora Law Firm PLLC
+board     Zamora Law Firm                                        -> Zamora Law Firm PLLC
+board     Zamora Law                                             -> Zamora Law Firm PLLC
+board     Zamora                                                 -> Zamora Law Firm PLLC
+bookings  ABC Homecare <nina@abchomecare.com>                    -> ABC Homecare
+bookings  Alan Bennett <alan@beaconbarbers.com>                  -> Beacon Barbershop
+bookings  Angela Vega <angela@faithandfire.fm>                   -> Faith & Fire Podcast
+bookings  Angela Webb DDS <hello@ironcladdental.com>             -> Ironclad Dental
+bookings  Beacon Barbershop <alan@beaconbarbers.com>             -> Beacon Barbershop
+bookings  Carmen Ibarra <carmen@evergreenbridal.com>             -> Evergreen Bridal Boutique
+bookings  Copperline Med Spa - Plano <alana@copperlinemedspa.com> -> Copperline Med Spa
+bookings  Copperline Med Spa <alana@copperlinemedspa.com>        -> Copperline Med Spa
+bookings  Copperline Medspa <alana@copperlinemedspa.com>         -> Copperline Med Spa
+bookings  Crown Med Spa - Frisco <carmen@crownmedspa.com>        -> Crown Med Spa
+bookings  Crown Med Spa - Plano <carmen@crownmedspa.com>         -> Crown Med Spa
+bookings  Cypress Church <media@cypressdfw.org>                  -> Cypress DFW
+bookings  Cypress DFW <media@cypressdfw.org>                     -> Cypress DFW
+bookings  Cypress Media Team <media@cypressdfw.org>              -> Cypress DFW
+bookings  Darnell Shah <darnell@ntxfounders.fm>                  -> NTX Founders
+bookings  Dr Sullivan <hello@sullivandental.com>                 -> Sullivan Dental PLLC
+bookings  Dr. Gloria Sullivan <hello@sullivandental.com>         -> Sullivan Dental PLLC
+bookings  Dr. Novak <drnovak@magnoliachiro.com>                  -> Magnolia Chiropractic
+bookings  Dr. Simone Malik <smalik@lunafamilytherapy.com>        -> Luna Therapy
+bookings  Evergreen Bridal <carmen@evergreenbridal.com>          -> Evergreen Bridal Boutique
+bookings  F&F Podcast <angela.vega.mail@gmail.com>               -> Faith & Fire Podcast
+bookings  F&F Podcast <angela@faithandfire.fm>                   -> Faith & Fire Podcast
+bookings  Faith & Fire <angela@faithandfire.fm>                  -> Faith & Fire Podcast
+bookings  Faith & Fire Podcast <angela@faithandfire.fm>          -> Faith & Fire Podcast
+bookings  Faith and Fire <angela.vega.mail@gmail.com>            -> Faith & Fire Podcast
+bookings  Faith and Fire <angela@faithandfire.fm>                -> Faith & Fire Podcast
+bookings  Gloria Sullivan DDS <hello@sullivandental.con>         -> Sullivan Dental PLLC
+bookings  Glow PT <sofia@tallgrassmktg.com>                      -> Glow PT Dallas
+bookings  Glow PT Dallas <phassan@glowptdallas.com>              -> Glow PT Dallas
+bookings  Glow Physical Therapy <sofia@tallgrassmktg.com>        -> Glow PT Dallas
+bookings  Greenway Wealth <nhale@greenwaywp.com>                 -> Greenway Wealth Partners
+bookings  Greenway Wealth Partners <nhale@greenwaywp.com>        -> Greenway Wealth Partners
+bookings  Greg Reed <greg@redoakrg.com>                          -> Redoak Realty Group
+bookings  Hale Auto <kelsey.hale.detail@gmail.com>               -> Hale Auto Detailing
+bookings  Hale Detailing <kelsey.hale.detail@gmail.com>          -> Hale Auto Detailing
+bookings  Ibarra Ins <victor@ibarrainsures.com>                  -> Ibarra Insurance Group
+bookings  Ibarra Insurance <victor@ibarrainsures.com>            -> Ibarra Insurance Group
+bookings  Ibarra Insurance Group <victor@ibarrainsures.com>      -> Ibarra Insurance Group
+bookings  Ironclad Dental <hello@ironcladdental.com>             -> Ironclad Dental
+bookings  Joy Webb <joy@redoakrealty.com>                        -> Red Oak Realty LLC
+bookings  Lakeside Lab <ivy@thelakesidelab.coffee>               -> Lakesidelab Coffee
+bookings  Lakesidelab Coffee <ivy@thelakesidelab.coffee>         -> Lakesidelab Coffee
+bookings  Luis Castillo <luis@luissroofingtx.com>                -> Luis's Roofing LLC
+bookings  Luna Therapy <smalik@lunafamilytherapy.com>            -> Luna Therapy
+bookings  Magnolia Chiropractic <drnovak@magnoliachiro.com>      -> Magnolia Chiropractic
+bookings  Mateo Morales <mateo@sunsetfit.co>                     -> Sunset Athletics
+bookings  NTX Founders <darnell@ntxfounders.fm>                  -> NTX Founders
+bookings  North Texas Founders <darnell@ntxfounders.fm>          -> NTX Founders
+bookings  Novak Auto Detailing <isaac.novak.detail@gmail.com>    -> Novak Auto Detailing
+bookings  Novak Detailing <isaac.novak.detail@gmail.com>         -> Novak Auto Detailing
+bookings  Paul Tran <paul@paulsroofingtx.com>                    -> Paul's Roofing LLC
+bookings  Paul's Roofing <paul@paulsroofingtx.com>               -> Paul's Roofing LLC
+bookings  Paul's Roofing LLC <paul@paulsroofingtx.com>           -> Paul's Roofing LLC
+bookings  Pauls Roofing <paul@paulsroofingtx.com>                -> Paul's Roofing LLC
+bookings  Prime Peds <bcastillo@primepeds.com>                   -> Prime Pediatrics
+bookings  Red Oak Realty <joy@redoakrealty.com>                  -> Red Oak Realty LLC
+bookings  Redbird & Co Builders <isaac@redbird.build>            -> Redbird & Co Builders
+bookings  Redbird <isaac@redbird.build>                          -> Redbird & Co Builders
+bookings  Redbird Builders LLC <isaac@redbird.build>             -> Redbird & Co Builders
+bookings  Redoak RG <greg@redoakrg.com>                          -> Redoak Realty Group
+bookings  Ridgeway Coffee <rosa@ridgewaycoffee.com>              -> Ridgeway Coffee Roasters
+bookings  Ridgeway Coffee Roasters <rosa@ridgewaycoffee.com>     -> Ridgeway Coffee Roasters
+bookings  Ridgeway Roasters <rosa@ridgewaycoffee.com>            -> Ridgeway Coffee Roasters
+bookings  Sullivan Family Law <bsullivan@sullivanfamilylaw.com>  -> Sullivan Family Law PLLC
+bookings  Sullivan Family Law PLLC <bsullivan@sullivanfamilylaw.com> -> Sullivan Family Law PLLC
+bookings  Sullivan Law <bsullivan@sullivanfamilylaw.com>         -> Sullivan Family Law PLLC
+bookings  Sunset <mateo@sunsetathletics.com>                     -> Sunset Athletics
+bookings  Sunset <mateo@sunsetfit.co>                            -> Sunset Athletics
+bookings  Sunset Athletics <mateo@sunsetathletics.com>           -> Sunset Athletics
+bookings  Sunset Fitness <mateo@sunsetfit.co>                    -> Sunset Athletics
+bookings  Tallgrass - Glow <phassan@glowptdallas.com>            -> Glow PT Dallas
+bookings  The Lakeside Lab <ivy@thelakesidelab.coffee>           -> Lakesidelab Coffee
+bookings  Trinity <darnell@trinitygym.co>                        -> Trinity Gym TX
+bookings  Trinity Gym <darnell@trinitygym.co>                    -> Trinity Gym TX
+bookings  Trinity Gym TX <darnell@trinitygym.co>                 -> Trinity Gym TX
+bookings  Victor Ibarra <victor@ibarrainsures.com>               -> Ibarra Insurance Group
+bookings  Zamora <info@zamoralaw.com>                            -> Zamora Law Firm PLLC
+bookings  Zamora Law <info@zamoralaw.com>                        -> Zamora Law Firm PLLC
+bookings  Zamora Law Firm PLLC <info@zamoralaw.com>              -> Zamora Law Firm PLLC
+invoices  ABC Homecare <nina@abchomecare.com>                    -> ABC Homecare
+invoices  Alan Bennett <alan@beaconbarbers.com>                  -> Beacon Barbershop
+invoices  Angela Vega <angela@faithandfire.fm>                   -> Faith & Fire Podcast
+invoices  Beacon Barbershop <alan@beaconbarbers.com>             -> Beacon Barbershop
+invoices  Brooke Sullivan <bsullivan@sullivanfamilylaw.com>      -> Sullivan Family Law PLLC
+invoices  Carmen Ibarra <carmen@evergreenbridal.com>             -> Evergreen Bridal Boutique
+invoices  Copperline Med Spa - Plano <alana@copperlinemedspa.com> -> Copperline Med Spa
+invoices  Copperline Med Spa <alana@copperlinemedspa.com>        -> Copperline Med Spa
+invoices  Copperline Medspa <alana@copperlinemedspa.com>         -> Copperline Med Spa
+invoices  Crown Med Spa - Frisco <carmen@crownmedspa.com>        -> Crown Med Spa
+invoices  Crown Med Spa - Plano <carmen@crownmedspa.com>         -> Crown Med Spa
+invoices  Crown Med Spa <carmen@crownmedspa.com>                 -> Crown Med Spa
+invoices  Cypress Church <media@cypressdfw.org>                  -> Cypress DFW
+invoices  Cypress DFW <media@cypressdfw.org>                     -> Cypress DFW
+invoices  Cypress Media Team <media@cypressdfw.org>              -> Cypress DFW
+invoices  Darnell Shah <darnell@ntxfounders.fm>                  -> NTX Founders
+invoices  Dr. Gloria Sullivan <hello@sullivandental.com>         -> Sullivan Dental PLLC
+invoices  Dr. Novak <drnovak@magnoliachiro.com>                  -> Magnolia Chiropractic
+invoices  Dr. Simone Malik <smalik@lunafamilytherapy.com>        -> Luna Therapy
+invoices  Evergreen Bridal <carmen@evergreenbridal.com>          -> Evergreen Bridal Boutique
+invoices  Evergreen Bridal Boutique <carmen@evergreenbridal.com> -> Evergreen Bridal Boutique
+invoices  F&F Podcast <angela@faithandfire.fm>                   -> Faith & Fire Podcast
+invoices  Faith & Fire <angela@faithandfire.fm>                  -> Faith & Fire Podcast
+invoices  Faith & Fire Podcast <angela@faithandfire.fm>          -> Faith & Fire Podcast
+invoices  Faith and Fire <angela@faithandfire.fm>                -> Faith & Fire Podcast
+invoices  Gloria Sullivan DDS <hello@sullivandental.com>         -> Sullivan Dental PLLC
+invoices  Greenway WP <nhale@greenwaywp.com>                     -> Greenway Wealth Partners
+invoices  Greenway Wealth <nhale@greenwaywp.com>                 -> Greenway Wealth Partners
+invoices  Greg Reed <greg@redoakrg.com>                          -> Redoak Realty Group
+invoices  Hale Auto <kelsey.hale.detail@gmail.com>               -> Hale Auto Detailing
+invoices  Hale Auto Detailing <kelsey.hale.detail@gmail.com>     -> Hale Auto Detailing
+invoices  Hale Detailing <kelsey.hale.detail@gmail.com>          -> Hale Auto Detailing
+invoices  Ibarra Ins <victor@ibarrainsures.com>                  -> Ibarra Insurance Group
+invoices  Ibarra Insurance <victor@ibarrainsures.com>            -> Ibarra Insurance Group
+invoices  Ibarra Insurance Group <victor@ibarrainsures.com>      -> Ibarra Insurance Group
+invoices  Ironclad Dental <hello@ironcladdental.com>             -> Ironclad Dental
+invoices  Joy Webb <joy@redoakrealty.com>                        -> Red Oak Realty LLC
+invoices  Lakeside Lab <ivy@thelakesidelab.coffee>               -> Lakesidelab Coffee
+invoices  Lakesidelab Coffee <ivy@thelakesidelab.coffee>         -> Lakesidelab Coffee
+invoices  Luis's Roofing <luis@luissroofingtx.com>               -> Luis's Roofing LLC
+invoices  Luis's Roofing LLC <luis@luissroofingtx.com>           -> Luis's Roofing LLC
+invoices  Luna Family Therapy <smalik@lunafamilytherapy.com>     -> Luna Therapy
+invoices  Magnolia Chiro <drnovak@magnoliachiro.com>             -> Magnolia Chiropractic
+invoices  Magnolia Chiropractic <drnovak@magnoliachiro.com>      -> Magnolia Chiropractic
+invoices  Mateo Morales <mateo@sunsetfit.co>                     -> Sunset Athletics
+invoices  NTX Founders <darnell@ntxfounders.fm>                  -> NTX Founders
+invoices  North Texas Founders <darnell@ntxfounders.fm>          -> NTX Founders
+invoices  Novak Auto <isaac.novak.detail@gmail.com>              -> Novak Auto Detailing
+invoices  Novak Auto Detailing <isaac.novak.detail@gmail.com>    -> Novak Auto Detailing
+invoices  Paul Tran <paul@paulsroofingtx.com>                    -> Paul's Roofing LLC
+invoices  Paul's Roofing <paul@paulsroofingtx.com>               -> Paul's Roofing LLC
+invoices  Paul's Roofing LLC <paul@paulsroofingtx.com>           -> Paul's Roofing LLC
+invoices  Red Oak Realty <joy@redoakrealty.com>                  -> Red Oak Realty LLC
+invoices  Red Oak Realty LLC <joy@redoakrealty.com>              -> Red Oak Realty LLC
+invoices  Redbird & Co Builders <isaac@redbird.build>            -> Redbird & Co Builders
+invoices  Redbird <isaac@redbird.build>                          -> Redbird & Co Builders
+invoices  Redbird Builders LLC <isaac@redbird.build>             -> Redbird & Co Builders
+invoices  Redoak RG <greg@redoakrg.com>                          -> Redoak Realty Group
+invoices  Ridgeway Coffee Roasters <rosa@ridgewaycoffee.com>     -> Ridgeway Coffee Roasters
+invoices  Sullivan Dental <hello@sullivandental.com>             -> Sullivan Dental PLLC
+invoices  Sullivan Family Law <bsullivan@sullivanfamilylaw.com>  -> Sullivan Family Law PLLC
+invoices  Sullivan Law <bsullivan@sullivanfamilylaw.com>         -> Sullivan Family Law PLLC
+invoices  Sunset Athletics <mateo@sunsetathletics.com>           -> Sunset Athletics
+invoices  Sunset Fit <mateo@sunsetfit.co>                        -> Sunset Athletics
+invoices  Sunset Fitness <mateo@sunsetfit.co>                    -> Sunset Athletics
+invoices  Tallgrass Digital <sofia@tallgrassmktg.com>            -> Tallgrass Digital
+invoices  The Lakeside Lab <ivy@thelakesidelab.coffee>           -> Lakesidelab Coffee
+invoices  Trinity Gym <darnell@trinitygym.co>                    -> Trinity Gym TX
+invoices  Trinity Gym TX <darnell@trinitygym.co>                 -> Trinity Gym TX
+invoices  Zamora <info@zamoralaw.com>                            -> Zamora Law Firm PLLC
+invoices  Zamora Law Firm <info@zamoralaw.com>                   -> Zamora Law Firm PLLC
+invoices  Zamora Law Firm PLLC <info@zamoralaw.com>              -> Zamora Law Firm PLLC
+messages  2145550103 (Alana)                                     -> Copperline Med Spa
+messages  2145550131 (Paul)                                      -> Zamora Law Firm PLLC
+messages  2145550137 (Alan)                                      -> Beacon Barbershop
+messages  2145550177 (Trent)                                     -> Magnolia Chiropractic
+messages  2145550199 (Isaac)                                     -> Novak Auto Detailing
+messages  4695550115 (Angela)                                    -> Ironclad Dental
+messages  4695550141 (Darnell)                                   -> NTX Founders
+messages  4695550150 (Paul)                                      -> Paul's Roofing LLC
+messages  4695550153 (Brooke)                                    -> Prime Pediatrics
+messages  4695550187 (Victor)                                    -> Ibarra Insurance Group
+messages  8175550104 (Brooke)                                    -> Sullivan Family Law PLLC
+messages  8175550115 (Paula)                                     -> Glow PT Dallas
+messages  8175550122 (Nina)                                      -> ABC Homecare
+messages  8175550127 (Isaac)                                     -> Redbird & Co Builders
+messages  8175550128 (Mateo)                                     -> Sunset Athletics
+messages  8175550136 (Ivy)                                       -> Lakesidelab Coffee
+messages  8175550137 (Carmen)                                    -> Evergreen Bridal Boutique
+messages  8175550152 (Greg)                                      -> Redoak Realty Group
+messages  8175550158 (Carmen)                                    -> Crown Med Spa
+messages  8175550181 (Joy)                                       -> Red Oak Realty LLC
+messages  8175550184 (Angela)                                    -> Faith & Fire Podcast
+messages  8175550185 (Kelsey)                                    -> Hale Auto Detailing
+messages  8175550192 (Simone)                                    -> Luna Therapy
+messages  9725550112 (Reggie)                                    -> Cypress DFW
+messages  9725550144 (Darnell)                                   -> Trinity Gym TX
+messages  9725550159 (Luis)                                      -> Luis's Roofing LLC
+messages  9725550165 (Gloria)                                    -> Sullivan Dental PLLC
+messages  9725550192 (Nolan)                                     -> Greenway Wealth Partners
+messages  @evergreenbridalbou                                    -> Evergreen Bridal Boutique
+messages  @ibarrainsurancegrotx                                  -> Ibarra Insurance Group
+messages  @lunafamilytherapydfw                                  -> Luna Therapy
+messages  @novakautodetailing                                    -> Novak Auto Detailing
+messages  @paulsroofing                                          -> Paul's Roofing LLC
+messages  @zamoralawfirmdfw                                      -> Zamora Law Firm PLLC
+messages  alan@beaconbarbers.com                                 -> Beacon Barbershop
+messages  alana@copperlinemedspa.com                             -> Copperline Med Spa
+messages  angela.vega.mail@gmail.com (Angela Vega)               -> Faith & Fire Podcast
+messages  angela@faithandfire.fm                                 -> Faith & Fire Podcast
+messages  bcastillo@primepeds.com                                -> Prime Pediatrics
+messages  billing@acct-dept.co                                   -> not a client (unknown sender)
+messages  carmen@crownmedspa.com                                 -> Crown Med Spa
+messages  carmen@evergreenbridal.com                             -> Evergreen Bridal Boutique
+messages  darnell@ntxfounders.fm                                 -> NTX Founders
+messages  darnell@trinitygym.co                                  -> Trinity Gym TX
+messages  drnovak@magnoliachiro.com                              -> Magnolia Chiropractic
+messages  greg@redoakrg.com                                      -> Redoak Realty Group
+messages  growth@rank1seo.biz                                    -> not a client (unknown sender)
+messages  hello@ironcladdental.com                               -> Ironclad Dental
+messages  hello@sullivandental.com                               -> Sullivan Dental PLLC
+messages  isaac.novak.detail@gmail.com                           -> Novak Auto Detailing
+messages  isaac@redbird.build                                    -> Redbird & Co Builders
+messages  ivy@thelakesidelab.coffee                              -> Lakesidelab Coffee
+messages  joy@redoakrealty.com                                   -> Red Oak Realty LLC
+messages  kelsey.hale.detail@gmail.com                           -> Hale Auto Detailing
+messages  kim@magnoliachiro.com (Kim Novak)                      -> Magnolia Chiropractic
+messages  kim@magnoliachiro.com                                  -> Magnolia Chiropractic
+messages  luis@luissroofingtx.com                                -> Luis's Roofing LLC
+messages  mateo@sunsetathletics.com                              -> Sunset Athletics
+messages  mateo@sunsetfit.co                                     -> Sunset Athletics
+messages  nhale@greenwaywp.com                                   -> Greenway Wealth Partners
+messages  nina@abchomecare.com                                   -> ABC Homecare
+messages  noreply@domain-renewals.net                            -> not a client (unknown sender)
+messages  paul@paulsroofingtx.com                                -> Paul's Roofing LLC
+messages  phassan@glowptdallas.com                               -> Glow PT Dallas
+messages  promo@fastfollowers.io                                 -> not a client (unknown sender)
+messages  rosa@ridgewaycoffee.com                                -> Ridgeway Coffee Roasters
+messages  smalik@lunafamilytherapy.com                           -> Luna Therapy
+messages  sofia@tallgrassmktg.com                                -> Tallgrass Digital
+messages  victor@ibarrainsures.com                               -> Ibarra Insurance Group
+payments  ALAN BENNETT <alan@beaconbarbers.com>                  -> Beacon Barbershop
+payments  ANGELA VEGA <>                                         -> Faith & Fire Podcast
+payments  ANGELA VEGA <angela@faithandfire.fm>                   -> Faith & Fire Podcast
+payments  ANGELA WEBB <hello@ironcladdental.com>                 -> Ironclad Dental
+payments  Alan Bennett <alan@beaconbarbers.com>                  -> Beacon Barbershop
+payments  Angela Vega <angela@faithandfire.fm>                   -> Faith & Fire Podcast
+payments  BROOKE SULLIVAN <bsullivan@sullivanfamilylaw.com>      -> Sullivan Family Law PLLC
+payments  CARMEN ORTIZ <carmen@crownmedspa.com>                  -> Crown Med Spa
+payments  COPPERLINE MED SPA <alana@copperlinemedspa.com>        -> Copperline Med Spa
+payments  COPPERLINE MEDSPA <alana@copperlinemedspa.com>         -> Copperline Med Spa
+payments  CROWN MEDSPA <carmen@crownmedspa.com>                  -> Crown Med Spa
+payments  CYPRESS CHURCH <media@cypressdfw.org>                  -> Cypress DFW
+payments  Carmen Ibarra <carmen@evergreenbridal.com>             -> Evergreen Bridal Boutique
+payments  Copperline Med Spa <alana@copperlinemedspa.com>        -> Copperline Med Spa
+payments  Crown <carmen@crownmedspa.com>                         -> Crown Med Spa
+payments  Crown Med Spa <carmen@crownmedspa.com>                 -> Crown Med Spa
+payments  Cypress Church <media@cypressdfw.org>                  -> Cypress DFW
+payments  Cypress DFW <media@cypressdfw.org>                     -> Cypress DFW
+payments  Cypress Media Team <media@cypressdfw.org>              -> Cypress DFW
+payments  Darnell Shah <darnell@ntxfounders.fm>                  -> NTX Founders
+payments  Dr. Angela Webb <hello@ironcladdental.com>             -> Ironclad Dental
+payments  Dr. Simone Malik <smalik@lunafamilytherapy.com>        -> Luna Therapy
+payments  EVERGREEN BRIDAL <carmen@evergreenbridal.com>          -> Evergreen Bridal Boutique
+payments  EVERGREEN BRIDAL BOUTIQUE <carmen@evergreenbridal.com> -> Evergreen Bridal Boutique
+payments  Evergreen Bridal <carmen@evergreenbridal.com>          -> Evergreen Bridal Boutique
+payments  Evergreen Bridal Boutique <carmen@evergreenbridal.com> -> Evergreen Bridal Boutique
+payments  F&F Podcast <angela@faithandfire.fm>                   -> Faith & Fire Podcast
+payments  FAITH & FIRE PODCAST <angela@faithandfire.fm>          -> Faith & Fire Podcast
+payments  Faith & Fire <angela@faithandfire.fm>                  -> Faith & Fire Podcast
+payments  Faith & Fire Podcast <angela@faithandfire.fm>          -> Faith & Fire Podcast
+payments  Gloria Sullivan DDS <hello@sullivandental.com>         -> Sullivan Dental PLLC
+payments  Greenway WP <nhale@greenwaywp.com>                     -> Greenway Wealth Partners
+payments  Greenway Wealth Partners <nhale@greenwaywp.com>        -> Greenway Wealth Partners
+payments  HALE AUTO <kelsey.hale.detail@gmail.com>               -> Hale Auto Detailing
+payments  ISAAC NOVAK <isaac.novak.detail@gmail.com>             -> Novak Auto Detailing
+payments  Ibarra Ins <victor@ibarrainsures.com>                  -> Ibarra Insurance Group
+payments  Joy Webb <joy@redoakrealty.com>                        -> Red Oak Realty LLC
+payments  LUIS CASTILLO <>                                       -> Luis's Roofing LLC
+payments  LUISS ROOFING <luis@luissroofingtx.com>                -> Luis's Roofing LLC
+payments  LUNA FAMILY THERAPY <smalik@lunafamilytherapy.com>     -> Luna Therapy
+payments  Lakeside Lab <ivy@thelakesidelab.coffee>               -> Lakesidelab Coffee
+payments  Lakesidelab Coffee <ivy@thelakesidelab.coffee>         -> Lakesidelab Coffee
+payments  MAGNOLIA CHIRO <drnovak@magnoliachiro.com>             -> Magnolia Chiropractic
+payments  MAGNOLIA CHIROPRACTIC <drnovak@magnoliachiro.com>      -> Magnolia Chiropractic
+payments  MATEO MORALES <mateo@sunsetathletics.com>              -> Sunset Athletics
+payments  Mateo Morales <mateo@sunsetfit.co>                     -> Sunset Athletics
+payments  NOLAN HALE <nhale@greenwaywp.com>                      -> Greenway Wealth Partners
+payments  NORTH TEXAS FOUNDERS <darnell@ntxfounders.fm>          -> NTX Founders
+payments  NTX FOUNDERS <darnell@ntxfounders.fm>                  -> NTX Founders
+payments  NTX Founders <darnell@ntxfounders.fm>                  -> NTX Founders
+payments  North Texas Founders <darnell@ntxfounders.fm>          -> NTX Founders
+payments  PASTOR REGGIE PRICE <media@cypressdfw.org>             -> Cypress DFW
+payments  PAUL TRAN <paul@paulsroofingtx.com>                    -> Paul's Roofing LLC
+payments  PAUL ZAMORA <info@zamoralaw.com>                       -> Zamora Law Firm PLLC
+payments  Paul's Roofing LLC <paul@paulsroofingtx.com>           -> Paul's Roofing LLC
+payments  Pauls Roofing <paul@paulsroofingtx.com>                -> Paul's Roofing LLC
+payments  RED OAK REALTY <joy@redoakrealty.com>                  -> Red Oak Realty LLC
+payments  REDBIRD BUILDERS LLC <isaac@redbird.build>             -> Redbird & Co Builders
+payments  REGGIE PRICE <media@cypressdfw.org>                    -> Cypress DFW
+payments  Red Oak Realty <joy@redoakrealty.com>                  -> Red Oak Realty LLC
+payments  Redbird & Co Builders <isaac@redbird.build>            -> Redbird & Co Builders
+payments  Ridgeway Coffee Roasters <rosa@ridgewaycoffee.com>     -> Ridgeway Coffee Roasters
+payments  Ridgeway Roasters <rosa@ridgewaycoffee.com>            -> Ridgeway Coffee Roasters
+payments  SULLIVAN DENTAL <hello@sullivandental.com>             -> Sullivan Dental PLLC
+payments  SUNSET ATHLETICS <mateo@sunsetfit.co>                  -> Sunset Athletics
+payments  SUNSET FITNESS <mateo@sunsetfit.co>                    -> Sunset Athletics
+payments  Sullivan Dental PLLC <hello@sullivandental.com>        -> Sullivan Dental PLLC
+payments  Sullivan Family Law <bsullivan@sullivanfamilylaw.com>  -> Sullivan Family Law PLLC
+payments  Sullivan Law <bsullivan@sullivanfamilylaw.com>         -> Sullivan Family Law PLLC
+payments  Sunset <mateo@sunsetathletics.com>                     -> Sunset Athletics
+payments  TALLGRASS DIGITAL LLC <sofia@tallgrassmktg.com>        -> Tallgrass Digital
+payments  TRENT NOVAK <drnovak@magnoliachiro.com>                -> Magnolia Chiropractic
+payments  TRINITY GYM <darnell@trinitygym.co>                    -> Trinity Gym TX
+payments  VICTOR IBARRA <victor@ibarrainsures.com>               -> Ibarra Insurance Group
+payments  Victor Ibarra <victor@ibarrainsures.com>               -> Ibarra Insurance Group
+payments  ZAMORA LAW <info@zamoralaw.com>                        -> Zamora Law Firm PLLC

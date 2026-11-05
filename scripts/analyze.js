@@ -90,3 +90,18 @@ if (section === 'insights') {
   const CH = E.churnRisk(data, id, R, M, today);
   console.log('\nCHURN'); CH.slice(0, 8).forEach(c => console.log(' ', c.score, c.name, c.gone ? '(ALREADY GONE)' : '', '\n    ' + c.evidence.join('\n    ')));
 }
+
+if (section === 'namemap') {
+  // Every distinct (file, name, email) and the client it resolved to. Written to out/name_map.txt for checking by hand.
+  const nm = k => !k ? '?? UNRESOLVED' : (/^[dep]:/.test(id.clusters.get(k).name) ? 'not a client (unknown sender)' : id.clusters.get(k).name);
+  const seen = new Map();
+  data.bookings.forEach(b => seen.set(`bookings  ${b.name} <${b.email}>`, nm(b.client)));
+  data.invoices.forEach(i => seen.set(`invoices  ${i.name} <${i.email}>`, nm(i.payer) + (i.client !== i.payer ? `  (work for ${nm(i.client)})` : '')));
+  data.payments.forEach(p => seen.set(`payments  ${p.name} <${p.email}>`, nm(p.payer)));
+  data.board.forEach(v => seen.set(`board     ${v.name}`, nm(v.client)));
+  data.messages.filter(m => m.direction === 'from').forEach(m => seen.set(`messages  ${m.email || m.phone || '@' + m.handle}${m.person ? ' (' + m.person + ')' : ''}`, nm(m.client)));
+  const lines = [...seen].sort().map(([k, v]) => k.padEnd(64) + ' -> ' + v);
+  fs.mkdirSync(path.join(__dirname, '..', 'out'), { recursive: true });
+  fs.writeFileSync(path.join(__dirname, '..', 'out', 'name_map.txt'), `# ${lines.length} distinct names/senders and the client each resolves to\n` + lines.join('\n') + '\n');
+  console.log(`out/name_map.txt: ${lines.length} rows, unresolved: ${lines.filter(l => /UNRESOLVED/.test(l)).length}`);
+}
