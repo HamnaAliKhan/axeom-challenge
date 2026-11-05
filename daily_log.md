@@ -37,3 +37,22 @@
   - The draft answer said Instagram was "the next best channel" per lead after Referral. The printed table showed Website form ($1,107) ahead of Instagram ($1,063). Caught by reading the generated sentence against the numbers; the runner-up is now computed, not hard-coded.
   - The fuzzy-matching bugs from Session 1 were also AI-written code. I caught them by reading the full 315-row name map instead of trusting the summary.
 - **How I checked it:** confirmed the data files were never edited (same timestamps as the unzip, no git changes). All cleaning happens in code, which is what makes uploads of unseen files work.
+
+- **Session 3. What I did:**
+  - **Built the phone app** (`app/`): one "Do this first" card, 4 next items, 3 tiles, client search, client pages, and "Add new files".
+    - Every suggestion is yes/no, and "Yes" opens an editable draft that I send myself.
+    - Checked with headless-browser screenshots at 390px phone width.
+  - **Deployed it** on Netlify (free) at https://axeom-804e5c.netlify.app.
+  - **Tested uploads with files the app had never seen.** New payments cleared invoices, "Pauls Roofing Co" matched, a new voice note was flagged as lost on the right video, and a "we'd like to pause" message created a call card.
+  - **Read the Jev docs** and designed the Jev job (message triage, 4 typed questions per message). Wrote `scripts/jev_triage.js`, with a cache and an accuracy report against my 187 hand labels.
+  - **Wrote** writeup.md and assumptions.md.
+- **What I changed my mind about:**
+  - The first version told me to chase Magnolia's $2,500 right after saying they might leave. Money cards for an at-risk client now say to wait until after the call.
+  - I planned to run Jev, and skipped it once I hit the paywall. TypeSafe won't create an API key at a $0 balance, and the Playground says "out of funds" (screenshots in `evidence/`). The brief says "free tools only", so I wrote the Jev job up as designed and coded, but not run.
+- **What went wrong, and how I fixed it:**
+  - "We'd like to pause our videos" wasn't caught, because the churn rule only knew "we'll pause". I broadened it and retested.
+  - The churn card had a hard-coded first name. It now uses whoever sent the warning message.
+  - Headless Chrome wouldn't go below about 500px wide. I tested inside a 390px frame instead.
+- **Where the AI was wrong, and how I caught it:**
+  - The AI said 3 of the 6 vague "the one we shot last week" requests were confirmed by a follow-up. A check showed 4. The code only marked the cases where the follow-up *changed* the guess, not the ones where it agreed. Fixed the code and corrected the docs.
+  - The AI's first writeup draft said the rules were "100% right". They were 185 of 187, since I corrected 2 labels by hand. Changed it.

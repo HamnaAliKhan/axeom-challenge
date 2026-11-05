@@ -753,6 +753,8 @@
         prev = mine.filter(r => r.standing).pop() || null;
       }
       f.chases = prev;
+      // a follow-up that names the same video we guessed confirms the guess
+      if (prev && prev.vague && f.titleKey && prev.title.toLowerCase() === f.titleKey && !/follow-up on/.test(prev.how)) prev.how += `; follow-up on ${f.date} names "${prev.title}"`;
       if (prev) { prev.followedUp = (prev.followedUp || 0) + 1; prev.followups = (prev.followups || []).concat(f); }
     });
     requests.forEach(r => { const v = r.video && vById.get(r.video); if (v) v.requests.push(r); });
