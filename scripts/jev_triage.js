@@ -1,6 +1,6 @@
 // Jev job: message triage. For every inbound message, one Jev request with 4 typed questions:
 //   kind (Choice), edit type (Choice), which video (Choice over that client's own titles), leaving (Noul).
-// Compares Jev with hand-checked labels and writes out/jev_report.md + app/jev-labels.js.
+// Compares Jev with hand-checked labels and writes out/jev_report.md + out/jev-labels.js.
 //
 // Usage: put TYPESAFE_API_KEY=... in .env (gitignored), then: node scripts/jev_triage.js
 //        node scripts/jev_triage.js --report   (re-score from the cache, no API calls)
@@ -164,67 +164,10 @@ ${wrongVid.join('\n') || '| none | - | - |'}
   console.log(md.split('\n## ')[0]);
 }
 
-// Same request, as JSON to paste into the free Playground (console.typesafe.ai/playground) when the API has no credit.
-function requestFor(g) {
-  const videoOpts = {};
-  g.titles.forEach((t, i) => { videoOpts['t' + i] = `The video titled "${t}"`; });
-  videoOpts.last_shoot = 'Does not name the video; says "the one we shot last week" or similar';
-  videoOpts.none = 'Not about one specific video';
-  return {
-    state: { message: g.text, channel: g.channel, sender_business: g.client || 'unknown' },
-    questions: {
-      kind: { type: 'choice', instructions: 'What is the main purpose of this message from a client (or stranger) to a video studio?', criteria: KINDS },
-      edit: { type: 'choice', instructions: 'If the message asks for a change to a video, which change? Otherwise "none".', criteria: EDITS },
-      video: { type: 'choice', instructions: "Which of this client's videos is the message about?", criteria: videoOpts },
-      leaving: { type: 'noul', instructions: 'The sender says or hints that they may stop, pause or cancel working with the studio.' },
-    },
-  };
-}
-if (process.argv.includes('--playground')) {
-  // A sample that covers every kind of message and the hard cases, not just easy edits.
-  const pick = [];
-  const take = (f, n) => gold.filter(g => f(g) && !pick.includes(g)).slice(0, n).forEach(g => pick.push(g));
-  take(g => /[¿¡]/.test(g.text), 1);                       // Spanish
-  take(g => g.video === 'last_shoot', 2);                  // vague video reference
-  take(g => /Tallgrass|cancel today|full name|pause/i.test(g.text), 4); // rules got these wrong / tricky
-  ['churn', 'payment', 'referral', 'upsell', 'schedule', 'info', 'praise', 'approval', 'spam'].forEach(k => take(g => g.kind === k, 1));
-  take(g => g.kind === 'followup', 3);
-  take(g => g.kind === 'edit' && g.channel === 'voice note', 3);
-  take(g => g.kind === 'edit' && g.channel === 'instagram', 1);
-  take(g => g.kind === 'edit' && g.channel === 'email', 2);
-  take(g => g.kind === 'edit' && g.channel === 'whatsapp', 1);
-  const out = pick.map((g, i) => `## P${String(i + 1).padStart(2, '0')} · ${g.date} · ${g.channel} · key ${g.key}\n\nHand label: kind=${g.kind}, edit=${g.edit}, video=${g.video}, leaving=${g.leaving}\n\n**State**\n\`\`\`json\n${JSON.stringify(requestFor(g).state, null, 2)}\n\`\`\`\n\n**Questions**\n\`\`\`json\n${JSON.stringify(requestFor(g).questions, null, 2)}\n\`\`\`\n`);
-  fs.mkdirSync(path.join(root, 'out'), { recursive: true });
-  fs.writeFileSync(path.join(root, 'out', 'jev_playground.md'), `# Jev Playground pack (${pick.length} messages)\n\nFor each block: paste **State** into the state box and **Questions** into the questions box, run, and copy the answer JSON into out/jev_playground_answers.json under its key.\n\n` + out.join('\n'));
-  const tmpl = Object.fromEntries(pick.map(g => [g.key, null]));
-  const ans = path.join(root, 'out', 'jev_playground_answers.json');
-  if (!fs.existsSync(ans)) fs.writeFileSync(ans, JSON.stringify(tmpl, null, 2));
-  console.log(`wrote out/jev_playground.md with ${pick.length} messages:`, pick.map(g => g.kind).join(', '));
-  process.exit(0);
-}
-
 if (process.argv.includes('--labels')) {
   const c = {}; gold.forEach(x => { c[x.kind] = (c[x.kind] || 0) + 1; });
   console.log('messages', gold.length, c, '| with a video label', gold.filter(x => x.video !== 'none').length, '| "last week"', gold.filter(x => x.video === 'last_shoot').length, '| leaving', gold.filter(x => x.leaving).length);
   gold.filter(x => Object.keys(OVERRIDE).some(k => x.text.includes(k))).forEach(x => console.log('  override:', x.kind, '|', x.text.slice(0, 60)));
-  process.exit(0);
-}
-
-// Score answers copied from the Playground (raw response JSON, or just its "answers" object, per key).
-if (process.argv.includes('--score-playground')) {
-  const ans = JSON.parse(fs.readFileSync(path.join(root, 'out', 'jev_playground_answers.json'), 'utf8'));
-  const cache = {};
-  Object.entries(ans).forEach(([k, r]) => {
-    if (!r) return;
-    const a = r.answers || r;
-    const g = gold.find(x => x.key === k); if (!g || !a.kind) return;
-    const vid = a.video && a.video.choice;
-    cache[k] = { kind: a.kind.choice, kindConf: a.kind.confidence, edit: a.edit && a.edit.choice, editConf: a.edit && a.edit.confidence,
-      video: /^t\d+$/.test(vid || '') ? g.titles[+vid.slice(1)] : vid, videoConf: a.video && a.video.confidence,
-      leaving: a.leaving && a.leaving.noul, model: r.model || 'playground', usage: r.usage };
-  });
-  console.log(`${Object.keys(cache).length} Playground answers found`);
-  report(cache);
   process.exit(0);
 }
 
